@@ -1,10 +1,36 @@
 body {
     font-family: "DM Sans";
+    font-size: 11pt;
 }
 
+.dm-sans-bold {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
 .navbar {
-    height: 10vh;
+    height: 8vh;
     font-size: 10pt;
+    position: fixed;
+    width: 100%;
+    /* background: white; */
+    background: linear-gradient(c3dbff, c3dbff) padding-box,
+              linear-gradient(to right, transparent, white, transparent) border-box;
+    border-bottom: 2px solid transparent;
+    --bs-navbar-padding-y: 0;
+    z-index: 1000;
+}
+
+.nav-link, .nav-link.disabled {
+    font-weight: bold;
+    color: black;
+    /* text-transform: uppercase; */
+}
+
+.container-fluid {
+    display: flex;
 }
 
 div.landing {
@@ -15,18 +41,71 @@ div.landing {
     text-align: center;
     line-height: 1;
     padding: 0 400px 0 400px;
-    height: 90vh;
+    height: 100vh;
+    background:
+        linear-gradient(180deg, #0c6bfc, transparent 90%);
+        
+}
+
+div.landing p {
+    line-height: 2;
 }
 
 div.content {
-    padding: 0 300px 0 300px;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 150px 250px 150px 250px;
+    min-height: 100vh;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 span.title {
     font-size: 48pt;
+    font-weight: bold;
+}
+
+span.emph {
+    font-weight: bold;
+}
+
+.badge {
+    border-radius: 1000px;
+    padding: 5px 10px 5px 10px;
+}
+
+.card {
+    border: none;
+    background: linear-gradient(to right, transparent, #0c6bfc, transparent);
+}
+
+.bg-gray {
+    background: #f9fafc;
+    background: linear-gradient(150deg, #f9fafc, transparent);
+    border: 2px solid #f9fafc;
+    transition: 0.1s linear;
+}
+
+.bg-gray:hover {
+    box-shadow: 0 0 100px #c2dafd;
+}
+
+.bg-white {
+    background: white;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+}
+
+.btn-black, .btn-outline:hover {
+    border-radius: 1000px;
+    background: black;
+    color: white;
+}
+
+.btn-black:hover, .btn-outline {
+    border-radius: 1000px;
+    color: black;
+    border: 1px solid black;
 }
 
 
