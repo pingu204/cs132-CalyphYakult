@@ -18,6 +18,13 @@ div.landing {
     height: 90vh;
 }
 
+div.content {
+    padding: 0 300px 0 300px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 span.title {
     font-size: 48pt;
 }
