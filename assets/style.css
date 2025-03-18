@@ -1,0 +1,25 @@
+body {
+    font-family: "DM Sans";
+}
+
+.navbar {
+    height: 10vh;
+    font-size: 10pt;
+}
+
+div.landing {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    padding: 0 400px 0 400px;
+    height: 90vh;
+}
+
+span.title {
+    font-size: 48pt;
+}
+
+
