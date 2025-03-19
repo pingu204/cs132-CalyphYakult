@@ -16,12 +16,18 @@ body {
     position: fixed;
     width: 100%;
     /* background: white; */
-    background: linear-gradient(c3dbff, c3dbff) padding-box,
+    /* background: linear-gradient(c3dbff, c3dbff) padding-box,
               linear-gradient(to right, transparent, white, transparent) border-box;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent; */
     --bs-navbar-padding-y: 0;
     z-index: 1000;
 }
+
+.navbar.sticking {
+    background: white;
+    box-shadow: 0 0 100px #c2dafd;
+}
+
 
 .nav-link, .nav-link.disabled {
     font-weight: bold;
@@ -42,9 +48,7 @@ div.landing {
     line-height: 1;
     padding: 0 400px 0 400px;
     height: 100vh;
-    background:
-        linear-gradient(180deg, #0c6bfc, transparent 90%);
-        
+    background: linear-gradient(180deg, #0c6bfc, transparent 90%);
 }
 
 div.landing p {
