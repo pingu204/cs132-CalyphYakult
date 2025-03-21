@@ -105,16 +105,54 @@
                 <p>
                     The data set is a mix of different data sheets all grouped per region or province including but not limited to the budget allocations per department, crop and fishery production, enrollment data, population, poverty incidence, etc.
                 </p>
-                <button class="btn btn-outline"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button>
-            </div>
-            <div class="col placeholder-glow" style="width:100%; height: 100%;">
+                <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
+
+                <!-- Container for the dept logos -->
+                <div class="dept-logos">
+                    <img src="assets/images/dept_logos/deped.png" data-bs-toggle="modal" data-bs-target="#deped">
+                    <img src="assets/images/dept_logos/dpwh.png" data-bs-toggle="modal" data-bs-target="#dpwh">
+                </div>
+
+                <!-- Modals -->
+                <div id="deped" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content glow">
+                        <div class="modal-header">
+                            <h1 class="card-title fs-5" id="exampleModalLabel">Department of Education (DepEd)</h1>
+                        </div>
+                        <div class="modal-body p-4">
+                            Enrollment data from DepEd was found from a multitude of sources. Certain years were provided by DepEd itself in its website, meanwhile others were taken from images DepED provided to news outlets, and others were taken from posts made by the official DepED account on Facebook. 
+                            <div class="card bg-gray mt-4">
+                            <div class="card-body p-4">
+                                <h6 class="card-title emph">Data Pre-processing</h6>
+                                <p>
+                                    There are around 9400~ public schools nationwide, but the Department of Education does not publicly release the number of students per public school. They do however provide the number of enrollees per region. Due to this limitation, gathering any meaningful conclusions would require grouping the 9400~ schools into their respective regions to draw correlations between their budgets and the student population of each region.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dpwh" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Department of Public Works and Highways (DPWH)</h1>
+                        </div>
+                        <div class="modal-body">
+                            Data regarding the budget allocations and specific projects of the DPWH was gathered from the documents and files publicly released by the Department of Budget and Management. Only the years 2020-2024 were collected as they were the only ones with available Excel files of the General Appropriations Act, the law passed by Congress each year which provided specific details on the budgets of each government agency for that year. 
+                        </div>
+                        </div>
+                    </div>
+                </div>
                 
-            </div>
-        </div>
     </div>
     <div id="methodology"></div>
     <div id="conclusion"></div>
     <div id="about-us"></div>
 </body>
 <script type="text/javascript" src="assets/script.js""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

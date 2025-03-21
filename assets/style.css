@@ -67,7 +67,7 @@ span.title {
     font-weight: bold;
 }
 
-span.emph {
+.emph {
     font-weight: bold;
 }
 
@@ -119,4 +119,23 @@ div.hypotheses {
     column-gap: 0.5em;
 }
 
+div.dept-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 0.5em;
+}
 
+div.dept-logos img {
+    width: 80%;
+    height: auto;
+    filter:grayscale(100%);
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+div.dept-logos img:hover{
+    opacity: 100%;
+    filter:grayscale(0%);
+    z-index: 1;
+}
