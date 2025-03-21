@@ -158,8 +158,9 @@ div.hypotheses {
 div.dept-logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 1em;
     column-gap: 2em;
-    row-gap: 0.5em;
+    row-gap: 1em;
 }
 
 div.dept-logos img {
