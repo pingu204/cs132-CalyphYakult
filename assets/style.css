@@ -3,6 +3,10 @@ body {
     font-size: 11pt;
 }
 
+:root {
+    --white: white;
+}
+
 .dm-sans-bold {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -24,10 +28,13 @@ body {
 }
 
 .navbar.sticking {
-    background: white;
+    background: var(--white);
     box-shadow: 0 0 100px #c2dafd;
 }
 
+.navbar.sticking a:hover {
+    color: #0c6bfc;
+}
 
 .nav-link, .nav-link.disabled {
     font-weight: bold;
@@ -39,6 +46,21 @@ body {
     display: flex;
 }
 
+.container-fluid a {
+    transition: opacity 0.3s ease;
+}
+
+.container-fluid a:hover {
+    color: var(--white);
+    opacity: 0.8;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, opacity 0.3s ease, letter-spacing 0.5s ease;
+}
+
+.container-fluid a:not(hover) {
+    transition: color 0.3s ease, opacity 0.3s ease, letter-spacing 0.5s ease;
+}
+
 div.landing {
     display: flex;
     flex-direction: column;
@@ -46,13 +68,22 @@ div.landing {
     justify-content: center;
     text-align: center;
     line-height: 1;
-    padding: 0 400px 0 400px;
+    /* padding: 0 400px 0 400px; */
     height: 100vh;
     background: linear-gradient(180deg, #0c6bfc, transparent 90%);
+    align-items: center;
 }
 
 div.landing p {
     line-height: 2;
+}
+
+div.text-landing {  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: green; */
+    width: 70%;
 }
 
 div.content {
@@ -98,6 +129,11 @@ span.title {
     background: white;
 }
 
+.main-btn {
+    display: flex;
+    gap: 20px;
+}
+
 .btn {
     border-radius: 1000px;
     padding: 10px 20px 10px 20px;
@@ -138,4 +174,13 @@ div.dept-logos img:hover{
     opacity: 100%;
     filter:grayscale(0%);
     z-index: 1;
+}
+
+@media (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    .main-btn {
+        flex-direction: column;
+    }
 }
