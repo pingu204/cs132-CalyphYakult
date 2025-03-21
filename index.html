@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Analyzing Regional Budget Allocations in the Philippines | CS 132 Calyph Yakult</title>
+    <title>Analyzing the Regional Budget Allocations in the Philippines | CS 132 Calyph Yakult</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Coronel, Reyes, Seda, Vitug">
+    <link rel="icon" href="assets/images/icon.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -36,7 +37,7 @@
         <div class="text-landing">
             <span>REDUCED INEQUALITY</span>
             <span class="title">Making Every Peso Count</span>
-            <p>
+            <p class="placeholder-glow">
                 <span class="placeholder col-7"></span>
                 <span class="placeholder col-4"></span>
                 <span class="placeholder col-4"></span>
@@ -102,12 +103,18 @@
 
     <div id="data" class="content container">
         <div class="row mb-3">
-            <div class="col">
-                <h1>Data Collection</h1>
+            <div style="display:inline-flex;">
+                <h1 style="margin-right:0.3em;">Data Collection</h1>
+                <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline ml-2"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
+            </div>
+
                 <p>
                     The data set is a mix of different data sheets all grouped per region or province including but not limited to the budget allocations per department, crop and fishery production, enrollment data, population, poverty incidence, etc.
                 </p>
-                <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
+
+                <p>
+                    The <span class="emph text-primary">main dataset</span> includes the budget allocations of the 17 departments listed below. Click on each of them to know how the data obtained from each of them will be pre-processed!
+                </p>
 
                 <!-- Container for the dept logos -->
                 <div class="dept-logos">
@@ -130,10 +137,12 @@
                     <img src="assets/images/dept_logos/neda.png" data-bs-toggle="modal" data-bs-target="#neda">
                 </div>
 
+                
+
                 <!-- Modals -->
                 <div id="da" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Agriculture (DA)</h1>
                         </div>
@@ -153,7 +162,7 @@
 
                 <div id="dar" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Agrarian Reform (DAR)</h1>
                         </div>
@@ -176,7 +185,7 @@
 
                 <div id="denr" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Environment and Natural Resources (DENR)</h1>
                         </div>
@@ -202,7 +211,7 @@
 
                 <div id="deped" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Education (DepEd)</h1>
                         </div>
@@ -225,7 +234,7 @@
 
                 <div id="dhsud" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Human Settlements and Urban Development (DHSUD)</h1>
                         </div>
@@ -245,7 +254,7 @@
 
                 <div id="dict" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Information and Communications Technology (DICT)</h1>
                         </div>
@@ -265,7 +274,7 @@
 
                 <div id="dilg" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of the Interior and Local Government (DILG)</h1>
                         </div>
@@ -285,7 +294,7 @@
                 
                 <div id="dof" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Finance (DOF)</h1>
                         </div>
@@ -308,7 +317,7 @@
                 
                 <div id="doh" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Health (DOH)</h1>
                         </div>
@@ -331,7 +340,7 @@
 
                 <div id="doj" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Justice (DOJ)</h1>
                         </div>
@@ -354,7 +363,7 @@
 
                 <div id="dole" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Labor and Employment (DOLE)</h1>
                         </div>
@@ -377,7 +386,7 @@
 
                 <div id="dost" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Science and Technology (DOST)</h1>
                         </div>
@@ -400,17 +409,19 @@
 
                 <div id="dotr" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Transportation (DOTr)</h1>
                         </div>
                         <div class="modal-body p-4">
-                            Data gathered...
-                            <div class="card bg-gray mt-4">
+                            <div class="card bg-gray">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Data Pre-processing</h6>
                                 <p>
-                                    DOTr
+                                    The <span class="emph text-primary">Department of Transportation</span> has its own regional offices for its own, the LTO and LTFRB. It also weirdly has allocations for regions, which are not the same as the regional offices. These will all be added together for each region.
+                                </p>
+                                <p> 
+                                    The DOTr's Central Office unlike the other departments does provide some more specific details on how it spends its money. Some notable expenses are subsidies for the MRT and LRT and some other for airports and ports. These expenses will be added to the respective regions they are generally located in. The other expenses however such as sea operations and motor vehicle registration will not be considered.
                                 </p>
                             </div>
                             </div>
@@ -422,17 +433,19 @@
 
                 <div id="dpwh" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Public Works and Highways (DPWH)</h1>
                         </div>
                         <div class="modal-body p-4">
-                            Data gathered...
-                            <div class="card bg-gray mt-4">
+                            <div class="card bg-gray">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Data Pre-processing</h6>
                                 <p>
-                                    DPWH
+                                    The <span class="emph text-primary">Department of Public Works and Highways</span> has District Engineering Offices all across the country. These range from being within cities to provincial. They can be grouped into around 95 data entries with corresponding budgets and populations. They also handle regional offices which could be divided to their respective provinces or the provinces could all be added to their corresponding regions. Further consultation will decide this approach.
+                                </p>
+                                <p>
+                                    Their Central Office has a big budget and is very detailed in its expenses unlike other executive departments. The expenses are typically for large construction projects such as the Davao City Bypass or expressways. Given this long list of expenses, we can group each of the Central Office's expenses into their corresponding provinces or regions. We can do this by inputting the list of Central Office expenses to a program which would find the location of each construction project by comparing the text with a list of locations or through AI. Other expenses would be disregarded.
                                 </p>
                             </div>
                             </div>
@@ -443,17 +456,16 @@
 
                 <div id="dswd" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Social Welfare and Development (DSWD)</h1>
                         </div>
                         <div class="modal-body p-4">
-                            Data gathered...
-                            <div class="card bg-gray mt-4">
+                            <div class="card bg-gray">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Data Pre-processing</h6>
                                 <p>
-                                    DSWD
+                                    The Department of Social Work and Development have regional offices and their respective budgets. We could ignore the Central Office's huge budget as it is mostly concentrated in big national programs like AKAP, Protective Services, Pantawid Pamilyang Pilipino Program, etc. We cannot really find out how these programs allocate their spendings regionally so we could just ignore them as they are national programs.
                                 </p>
                             </div>
                             </div>
@@ -464,17 +476,16 @@
                 
                 <div id="dti" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">Department of Trade and Industry (DTI)</h1>
                         </div>
                         <div class="modal-body p-4">
-                            Data gathered...
-                            <div class="card bg-gray mt-4">
+                            <div class="card bg-gray">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Data Pre-processing</h6>
                                 <p>
-                                    DTI
+                                    The <span class="emph text-primary">Department of Trade and Industry</span> has regional offices and extension offices across the country. The extension offices' budgets will be added to the regional offices they are located within. The Central Office's budget is focused more on subsidies, and support to NGOs, as such it will be ignored for this study.
                                 </p>
                             </div>
                             </div>
@@ -485,17 +496,16 @@
 
                 <div id="neda" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content glow">
+                        <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="card-title fs-5" id="exampleModalLabel">National Economic and Development Authority (NEDA)</h1>
                         </div>
                         <div class="modal-body p-4">
-                            Data gathered...
-                            <div class="card bg-gray mt-4">
+                            <div class="card bg-gray">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Data Pre-processing</h6>
                                 <p>
-                                    NEDA
+                                    The <span class="emph text-primary">National Economic and Development Authority</span> has regional offices, region development councils, and regional statistical services offices. The budgets of each of these will be added together to their respective regions. The Central Office’s budget of NEDA will be ignored as it is mostly focused on the Philippine Statistics Authority and their expenses for censuses and the Philippine Identification System. These services are typically for the entire nation and hence cannot be regionalized.
                                 </p>
                             </div>
                             </div>
