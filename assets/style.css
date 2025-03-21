@@ -85,10 +85,12 @@ span.emph {
     background: #f9fafc;
     background: linear-gradient(150deg, #f9fafc, transparent);
     border: 2px solid #f9fafc;
+}
+.glow {
     transition: 0.1s linear;
 }
 
-.bg-gray:hover {
+.glow:hover {
     box-shadow: 0 0 100px #c2dafd;
 }
 
@@ -97,19 +99,24 @@ span.emph {
 }
 
 .btn {
+    border-radius: 1000px;
     padding: 10px 20px 10px 20px;
 }
 
 .btn-black, .btn-outline:hover {
-    border-radius: 1000px;
     background: black;
     color: white;
 }
 
 .btn-black:hover, .btn-outline {
-    border-radius: 1000px;
     color: black;
     border: 1px solid black;
+}
+
+div.hypotheses {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5em;
 }
 
 
