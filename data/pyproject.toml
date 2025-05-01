@@ -1,0 +1,13 @@
+[project]
+name = "data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chart-studio>=1.1.0",
+    "ipykernel>=6.29.5",
+    "nbformat>=5.10.4",
+    "pandas>=2.2.3",
+    "ruff>=0.11.7",
+]
