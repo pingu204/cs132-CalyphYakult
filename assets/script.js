@@ -1,3 +1,7 @@
+// Tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 // https://www.youtube.com/watch?v=V-CBdlfCPic
 navbar = document.querySelector(".navbar");
 scrollWatcher = document.querySelector("#data-scroll-watcher");
@@ -50,8 +54,8 @@ function generateDeptModals(depts) {
         heading.innerText = "Data Pre-processing";
         innerCard.appendChild(heading);
         for (desc of dept.description) {
-            let body = document.createElement("p");
-            body.innerHTML = dept.description;
+            var body = document.createElement("p");
+            body.innerHTML = desc;
             innerCard.appendChild(body);
         }
           
