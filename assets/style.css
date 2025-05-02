@@ -4,7 +4,8 @@ body {
 }
 
 :root {
-    --white: white;
+    --white : white;
+    --primary : #0c6bfc;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -14,6 +15,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 p {
     margin-bottom: 1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .dm-sans-bold {
@@ -37,17 +43,35 @@ p {
 }
 
 .navbar.sticking {
-    background: var(--white);
+    background: var(--primary);
     box-shadow: 0 0 50px #c2dafd;
+    color: white;
+
 }
 
 .navbar.sticking a:hover {
-    color: #0c6bfc;
+    opacity: 0.5;
+}
+
+.navbar.sticking .project-title {
+    border-right: 1px solid white;
+}
+
+.icon {
+    display: none;
+}
+
+.navbar.sticking .icon {
+    display: block;
+}
+
+.navbar.sticking .icon-dark {
+    display: none;
 }
 
 .nav-link {
     font-weight: bold;
-    color: black;
+    color: inherit;
     /* text-transform: uppercase; */
 }
 
