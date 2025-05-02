@@ -70,6 +70,11 @@ p {
     transition: color 0.3s ease, opacity 0.3s ease, letter-spacing 0.5s ease;
 }
 
+.profile {
+    outline: 2px solid #b8d3fc;
+    outline-offset: 5px;
+}
+
 div.landing {
     display: flex;
     flex-direction: column;
@@ -154,8 +159,6 @@ div.content {
     align-items: center;
 }
 
-
-
 .rq-questions {
     display: flex;
     flex-direction: column;
@@ -165,7 +168,7 @@ div.content {
 .rq {
     display: flex;
     justify-content: center;
-    width: calc(100% + 200px);
+    /* width: calc(100% + 200px); */
     transition: width 0.3s ease;
 }
 
@@ -190,6 +193,12 @@ div.content {
     border: 2px solid #fafafa;
     height: auto;
     justify-content: center;
+}
+
+.bg-gray-light {
+    background: #f9fafc;
+    background: linear-gradient(150deg, #f9fafc, transparent);
+    border: 2px solid #fafafa;
 }
 
 .glow {
@@ -226,6 +235,7 @@ span.title {
 .btn {
     border-radius: 1000px;
     padding: 10px 20px 10px 20px;
+    transition: 0.5s;
 }
 
 .btn-black, .btn-outline:hover {
@@ -236,6 +246,10 @@ span.title {
 .btn-black:hover, .btn-outline {
     color: black;
     border: 1px solid black;
+}
+
+.btn.bg-primary:hover {
+    opacity: 0.5;
 }
 
 div.hypotheses {
@@ -285,9 +299,9 @@ div.dept-logos img:hover{
 
 .data-set {
     display: flex;
-    width: calc(100% + 200px);
+    /* width: calc(100% + 200px); */
     gap: 35px;
-    padding: 10px;
+    /* padding: 10px; */
     flex-wrap: wrap;
 }
 
@@ -348,6 +362,10 @@ div.dept-logos img:hover{
 
     .data-set {
         width: 100%;
+    }
+
+    div.dept-logos {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

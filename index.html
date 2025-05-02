@@ -23,12 +23,24 @@
 <body>
     <nav class="navbar">
         <div class="container-fluid justify-content-center">
-            <div class="nav nav-underline" id="navbarSupportedContent">
-            <a class="nav-link" href="#overview">Overview</a>
-            <a class="nav-link" href="#data">Data</a>
-            <a class="nav-link" href="#methodology">Methodology</a>
-            <a class="nav-link" href="#conclusion">Conclusion</a>
-            <a class="nav-link" href="#about-us">About Us</a>
+            <div class="d-none d-lg-block">
+                <div class="nav nav-underline" id="navbarSupportedContent">
+                    <a class="nav-link" href="#overview">Overview</a>
+                    <a class="nav-link" href="#data">Data</a>
+                    <a class="nav-link" href="#methodology">Methodology</a>
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </div>
+            </div>
+            <!-- Mobile -->
+            <div class="d-block d-lg-none">
+                <div class="nav nav-underline" id="navbarSupportedContent">
+                    <a class="nav-link" href="#overview"><i class="bi bi-book-fill"></i></a>
+                    <a class="nav-link" href="#data"><i class="bi bi-clipboard2-data-fill"></i></a>
+                    <a class="nav-link" href="#methodology"><i class="bi bi-gear-fill"></i></a>
+                    <a class="nav-link" href="#conclusion"><i class="bi bi-clipboard2-check-fill"></i></a>
+                    <a class="nav-link" href="#about-us"><i class="bi bi-person-lines-fill"></i></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -40,7 +52,7 @@
         </div>
         <div class="text-landing">
             <!-- <span>REDUCED INEQUALITY</span> -->
-            <span class="title">Making Every Peso Count</span>
+            <span class="display-2 fw-bold">Making Every Peso Count</span>
             <p class="placeholder-glow">
                 <span class="placeholder col-7"></span>
                 <span class="placeholder col-4"></span>
@@ -116,7 +128,7 @@
 
     <div id="data" class="content container">
         <div class="flex-container">
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div style="display:inline-flex;">
                     <h1 class="mb-4 me-4">Data</h1>
                     <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline ml-2"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
@@ -139,7 +151,7 @@
                     <div class="row gap-3 mb-4">
                         <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary boxes">
                             <h1>17</h1>
-                            <h6>Departments</h6>
+                            <h6>Depts.</h6>
                         </div>
                         <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary boxes">
                             <h1>16</h1>
@@ -155,12 +167,15 @@
                         </div>
                     </div>
                     
-                    <p>
-                        The <span class="emph text-primary">main dataset</span> includes the budget allocations of the 17 departments listed below.
-                    </p>
+                    
                 </div>
             </div>
-            <div class="row mb-3 tek">
+
+            <div class="row mb-4">
+                <p>
+                    The <span class="emph text-primary">main dataset</span> includes the budget allocations of the 17 departments listed below.
+                </p>
+
                 <!-- Container for the dept logos -->
                 <div id="dept-logos" class="dept-logos"></div>
     
@@ -171,10 +186,11 @@
                     <i class="bi bi-info-circle me-3"></i> Click on each of them to know how the data will be pre-processed!
                 </div>
             </div> 
+
             <div class="data-set">
                 <div class="mb-3 dt glow">
                     <div class="card-body">
-                        <h4 class="topic text-bg-primary mb-2 emph">DATA COLLECTION</h4>
+                        <h4 class="topic text-bg-primary mb-2 emph p-2 ps-4 pe-4">DATA COLLECTION</h4>
                         <div class="data-content">
                             <p>
                                 Data regarding the budget allocations and specific projects of the DPWH was gathered from the documents and files publicly released by the Department of Budget and Management. Only the years 2020-2024 were collected as they were the only ones with available Excel files of the General Appropriations Act, the law passed by Congress each year which provided specific details on the budgets of each government agency for that year. 
@@ -222,9 +238,81 @@
             <h1 class="mb-4 me-4">Results</h1>
         </div>
     </div>
-    <div id="about-us" class = "content container">
-        <div class="row mb-3">
-            <h1 class="mb-4 me-4">About Us</h1>
+
+    <div id="about-us" class="content container mb-4">
+        <div class="flex-container">
+            <div class="row mb-3">
+                <h1 class="mb-4 text-start">About Us</h1>
+            </div>
+            <div class="mb-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est. Suspendisse potenti. In dapibus nunc vitae justo blandit ullamcorper. Duis sit amet mauris vitae nisi tristique finibus. In semper tortor id orci varius tempor.</p>
+            </div>
+            <div class="row mb-4 w-100 text-center gap-4">
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://i.pinimg.com/736x/f3/fa/94/f3fa9404689a4cb73dedc5b0b855ad68.jpg">
+                    <div>
+                        <h4 class="fw-bold">Gav</h4>
+                        <span>Gavril Benedict Coronel</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/gdbpursuit" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @gdbpursuit</button></a>
+                        <a href="https://www.linkedin.com/in/gb-coronel/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQF1y9Az6zSRfA/profile-displayphoto-shrink_800_800/B56ZWy3fmLHQAk-/0/1742462647214?e=1751500800&v=beta&t=9Itp2ST6SSyxbAFdoMIKlqT4YyMru7zWl1v5JgaQ-B4">
+                    <div>
+                        <h4 class="fw-bold">Nich</h4>
+                        <span>Nicholas John Reyes</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/Njlr41" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @Njlr41</button></a>
+                        <a href="https://www.linkedin.com/in/nicholas-reyes41/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                
+            </div>
+            <div class="row w-100 text-center gap-4">
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQHBjg_BLc_1-w/profile-displayphoto-shrink_800_800/B56ZXnjHgkGcAc-/0/1743346498202?e=1751500800&v=beta&t=0gk3QdvFDnMCXi6mZdnCht6FpjAJl__XuLRunNfK78Q">
+                    <div>
+                        <h4 class="fw-bold">Bopie</h4>
+                        <span>Jopeth Bryan Seda</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/pingu204" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @pingu204</button></a>
+                        <a href="https://www.linkedin.com/in/jopeth-bryan-seda/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQGe5tjGojlL2w/profile-displayphoto-shrink_800_800/B56ZWKUKwRGoAw-/0/1741782298266?e=1751500800&v=beta&t=KMZtsd3pKaPXRyJZHeaTGqyUbw4P7c572GK_eC2qOss">
+                    <div>
+                        <h4 class="fw-bold">GV</h4>
+                        <span>Carl Geevee Vitug</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/good-vibe" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @good-vibe</button></a>
+                        <a href="https://www.linkedin.com/in/cgvitug/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                
+            </div>
         </div>
     </div>
 </body>
