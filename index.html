@@ -22,15 +22,52 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="container-fluid justify-content-center">
-            <div class="nav nav-underline" id="navbarSupportedContent">
-            <a class="nav-link" href="#overview">Overview</a>
-            <a class="nav-link" href="#data">Data</a>
-            <a class="nav-link disabled" href="#methodology">Methodology</a>
-            <a class="nav-link disabled" href="#conclusion" disabled>Conclusion</a>
-            <a class="nav-link disabled" href="#about-us" disabled>About Us</a>
+        <div class="h-100 container-fluid d-flex flex-row gap-2 align-items-center">
+            <div class="h-100 d-flex flex-row align-items-center gap-3">
+                <div class="h-100 d-flex flex-row align-items-center gap-2 pe-4 project-title" style="transition: 0.3s ease">
+                    <img src="assets/images/icon_square_outline.svg" class="h-50 icon">
+                    <img src="assets/images/icon_square_dark.svg" class="h-50 icon-dark">
+                    <h4 class="fw-medium d-none d-lg-block" style="letter-spacing: -1px;">Making Every Peso Count</h4>
+                </div>
+                <div class="d-flex nav nav-underline fw-medium" style="font-size:10pt;" id="navbarSupportedContent">
+                    <a class="nav-link" href="#overview">Overview</a>
+                    <a class="nav-link" href="#data">Data</a>
+                    <a class="nav-link" href="#methodology">Methodology</a>
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </div>
+            </div>
+            <div class="flex-grow"></div>
+            <div class="d-none d-lg-flex flex-row gap-4">
+                <a href="https://github.com/pingu204/cs132-CalyphYakult" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Visit the Project Repository!"><h6 class="fw-medium"><span class="me-2">Calyph Yakult</span><i class="bi bi-github"></i></h6></a>
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Coming Soon!"><a href="#" class="nav-link disabled" ><h6 class="fw-medium"><span class="me-2">PilipiNuts 2024</span><i class="bi bi-arrow-up-right-circle-fill"></i></h6></a></span>
             </div>
         </div>
+        <!-- <div class="h-100 container-fluid">
+            <div class="h-100 d-none d-lg-block d-flex">
+                <div class="h-100 w-100 d-flex flex-row align-items-center gap-3">
+                    <img src="assets/images/icon_square_outline.svg" class="h-75 ratio-1x1">
+                    <h2 class="fw-medium" style="letter-spacing:-1px;">Making Every Peso Count</h2>
+                </div>
+                
+                <div class="d-flex nav nav-underline" style="font-size:10pt;" id="navbarSupportedContent">
+                    <a class="nav-link" href="#overview">Overview</a>
+                    <a class="nav-link" href="#data">Data</a>
+                    <a class="nav-link" href="#methodology">Methodology</a>
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <div class="nav nav-underline" id="navbarSupportedContent">
+                    <a class="nav-link" href="#overview" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Overview"><h3><i class="bi bi-book-fill"></i></h3></a>
+                    <a class="nav-link" href="#data" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Data"><h3><i class="bi bi-clipboard2-data-fill"></i></h3></a>
+                    <a class="nav-link" href="#methodology" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Methodology"><h3><i class="bi bi-gear-fill"></i></h3></a>
+                    <a class="nav-link" href="#conclusion" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Conclusion"><h3><i class="bi bi-clipboard2-check-fill"></i></h3></a>
+                    <a class="nav-link" href="#about-us" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="About Us"><h3><i class="bi bi-person-lines-fill"></i></h3></a>
+                </div>
+            </div>
+        </div> -->
     </nav>
     
     <div class="landing">
@@ -40,7 +77,7 @@
         </div>
         <div class="text-landing">
             <!-- <span>REDUCED INEQUALITY</span> -->
-            <span class="title">Making Every Peso Count</span>
+            <span class="display-2 fw-bold">Making Every Peso Count</span>
             <p class="placeholder-glow">
                 <span class="placeholder col-7"></span>
                 <span class="placeholder col-4"></span>
@@ -56,146 +93,253 @@
     </div>
     <div id="data-scroll-watcher" data-scroll-watcher></div>
     <div id="overview" class="content container">
-        <div class="row mb-3">
-            <h1 class="mb-4">Unequal budget distribution across regions in the Philippines dampens regional growth</h1>
-            <p>
-                The disparities in regional budget allocation in the Philippines have widened over the years leading to an increasing imbalance in resources. This steady growth of inequality has resulted in significant gaps in funding, with some regions receiving substantially less support despite having greater needs.
-            </p>
-            <p>
-                Budget allocation across regions in the Philippines remains highly unequal. In 2018, the Davao Region saw an increase in funding during President Duterte's Term, while two other regions suffered budget cuts<a href="https://www.abs-cbn.com/focus/09/05/18/davao-region-most-favored-others-get-cuts-token-hike-in-infra-budgets" target="_blank">[1]</a>. This pattern of disparity continued in 2024, with CPBRD reporting that some of the poorest regions such as Zamboanga, Bangsamoro, and parts of Mindanao received less than 1% of the DOTr's P 181 million budget, while 85% was concentrated in Metro Manila (NCR)<a href="https://www.philstar.com/business/2024/09/03/2382374/poorest-regions-left-out-transport-projects-study" target="_blank">[2]</a>. 
-            </p>
-            <p>
-                Evidently, for over three decades, underinvestment as reported by EDCOM in 1991 has contributed to a steady decline in education quality here in the Philippines. Although Senator Gatchalian noted that DepED consistently receives the highest budget allocation, distribution remains uneven<a href="https://www.gmanetwork.com/news/topstories/nation/912755/the-cost-of-miseducation-lack-of-investment-in-ph-education-sector/story/" target="_blank">[3]</a>. 
-            </p>
-        </div>
-        <div class="row mb-3"><h4>Research Questions <i class="bi bi-search"></i></h4></div>
-        <p>
-            In this project, we will use data science to analyze the budget allocation of various government departments in the Philippines. Through this, we aim to find potential inequalities or potential biases in the said budget at the regional level. In addition, we aim to establish correlations, should they exist, between the allocations and several key indicators such as population, poverty, and GDP.
-        </p>
-        <div class="row mb-3">
-            <div class="card bg-gray glow">
-            <div class="card-body">
-                <span class="badge text-bg-primary mb-2 emph">RESEARCH QUESTION 1</span>
-                <h4 class="card-title">Is there a significant disparity in the Department of Education's budget allocation per region when adjusted for population size and the number of schools?</h4>
-                <div class="card bg-white">
-                <div class="card-body p-4">
-                    <h6 class="card-title emph">Hypotheses</h6>
-                    <div class="hypotheses">
-                        <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
-                        <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
+        <div class="flex-container">
+            <div class="row mb-3">
+                <h1 class ="mb-4">Unequal budget distribution across regions in the Philippines dampens regional growth</h1>
+                <p>
+                    The disparities in regional budget allocation in the Philippines have widened over the years leading to an increasing imbalance in resources. This steady growth of inequality has resulted in significant gaps in funding, with some regions receiving substantially less support despite having greater needs.
+                </p>
+                <p>
+                    Budget allocation across regions in the Philippines remains highly unequal. In 2018, the Davao Region saw an increase in funding during President Duterte's Term, while two other regions suffered budget cuts<a href="https://www.abs-cbn.com/focus/09/05/18/davao-region-most-favored-others-get-cuts-token-hike-in-infra-budgets" target="_blank">[1]</a>. This pattern of disparity continued in 2024, with CPBRD reporting that some of the poorest regions such as Zamboanga, Bangsamoro, and parts of Mindanao received less than 1% of the DOTr's P 181 million budget, while 85% was concentrated in Metro Manila (NCR)<a href="https://www.philstar.com/business/2024/09/03/2382374/poorest-regions-left-out-transport-projects-study" target="_blank">[2]</a>. 
+                </p>
+                <p>
+                    Evidently, for over three decades, underinvestment as reported by EDCOM in 1991 has contributed to a steady decline in education quality here in the Philippines. Although Senator Gatchalian noted that DepED consistently receives the highest budget allocation, distribution remains uneven<a href="https://www.gmanetwork.com/news/topstories/nation/912755/the-cost-of-miseducation-lack-of-investment-in-ph-education-sector/story/" target="_blank">[3]</a>. 
+                </p>
+            </div>
+            <div class="rq-questions">
+                <div class="row mb-3 me-auto"><h4>Research Questions <i class="bi bi-search"></i></h4></div>
+                <p>
+                    In this project, we will use data science to analyze the budget allocation of various government departments in the Philippines. Through this, we aim to find potential inequalities or potential biases in the said budget at the regional level. In addition, we aim to establish correlations, should they exist, between the allocations and several key indicators such as population, poverty, and GDP.
+                </p>
+                <div class="rq">
+                    <div class="mb-3 fixing">
+                        <div class="card bg-gray glow">
+                            <div class="card-body">
+                                <span class="badge text-bg-primary mb-2 emph">RESEARCH QUESTION 1</span>
+                                <h4 class="card-title">Is there a significant disparity in the Department of Education's budget allocation per region when adjusted for population size and the number of schools?</h4>
+                                <div class="card bg-white">
+                                <div class="card-body p-4">
+                                    <h6 class="card-title emph">Hypotheses</h6>
+                                    <div class="hypotheses">
+                                        <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
+                                        <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 fixing">
+                        <div class="card bg-gray glow">
+                            <div class="card-body">
+                                <span class="badge text-bg-primary mb-2 emph">RESEARCH QUESTION 2</span>
+                                <h4 class="card-title">How does budget allocation vary across government departments at the regional level when adjusted for their respective needs?</h4>
+                                <div class="card bg-white">
+                                <div class="card-body p-4">
+                                    <h6 class="card-title emph">Hypotheses</h6>
+                                    <div class="hypotheses">
+                                        <i class="bi bi-slash-circle"></i><span>Each government department in the Philippines provides equitable budget allocation across all regions in the country.</span>
+                                        <i class="bi bi-h-circle"></i><span>Not all government departments in the Philippines provide equitable budget allocation across all regions in the country.</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="card bg-gray glow">
-            <div class="card-body">
-                <span class="badge text-bg-primary mb-2 emph">RESEARCH QUESTION 2</span>
-                <h4 class="card-title">How does budget allocation vary across government departments at the regional level when adjusted for their respective needs?</h4>
-                <div class="card bg-white">
-                <div class="card-body p-4">
-                    <h6 class="card-title emph">Hypotheses</h6>
-                    <div class="hypotheses">
-                        <i class="bi bi-slash-circle"></i><span>Each government department in the Philippines provides equitable budget allocation across all regions in the country.</span>
-                        <i class="bi bi-h-circle"></i><span>Not all government departments in the Philippines provide equitable budget allocation across all regions in the country.</span>
-                    </div>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
 
     <div id="data" class="content container">
-        <div class="row mb-3">
-            <div style="display:inline-flex;">
-                <h1 class="mb-4 me-4">Data</h1>
-                <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline ml-2"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
-            </div>
-
-                <p>
-                    The data set is a mix of different data sheets all grouped per region or province including but not limited to the budget allocations per department, crop and fishery production, enrollment data, population, poverty incidence, etc.
-                </p>
-
-                <p>
-                    All regional and provincial offices’ budgets were collected apart from the BARMM. This is because of the relatively new Bangsamoro Organic Law which provides fiscal autonomy to the region. The law provides BARMM with the powers to allocate their own budgets and limitedly tax people within their own territory. Hence it is hard to measure the inequality with the budget of BARMM in relation with the other executive departments. 
-                </p>
-
-                <p>
-                    For each department, their budget allocations will be grouped by Region (excluding BARMM). Given a time span of 2020-2024, we have a total of 17 Departments * 16 Regions * 5 Years = 1360 Observations.
-                </p>
-
-                <div class="row gap-3 mb-4">
-                    <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary">
-                        <h1>17</h1>
-                        <h6>Departments</h6>
-                    </div>
-                    <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary">
-                        <h1>16</h1>
-                        <h6>Regions</h6>
-                    </div>
-                    <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary">
-                        <h1>5</h1>
-                        <h6>Years</h6>
-                    </div>
-                    <div class="col bg-primary p-4 card bg-gray glow-fixed rounded-4">
-                        <h1 class="fw-bold">1360</h1>
-                        <h6>Observations</h6>
-                    </div>
+        <div class="flex-container">
+            <div class="row mb-4">
+                <div style="display:inline-flex;">
+                    <h1 class="mb-4 me-4">Data</h1>
+                    <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline ml-2"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
                 </div>
-                
-                <p>
-                    The <span class='emph text-primary'>main dataset</span> includes the budget allocations of the 17 departments listed below.
-                </p>
-        </div>
-        <div class="row mb-3">
-            <!-- Container for the dept logos -->
-            <div id="dept-logos" class="dept-logos"></div>
-
-            <!-- Modals -->
-            <div id="dept-modals"></div>
-
-            <div class="alert alert-light" role="alert">
-                <i class="bi bi-info-circle me-3"></i> Click on each of them to know how the data will be pre-processed!
+    
+                <div class="testing">
+                    <div class="cn">
+                        <p>
+                            The data set is a mix of different data sheets all grouped per region or province including but not limited to the budget allocations per department, crop and fishery production, enrollment data, population, poverty incidence, etc.
+                        </p>
+        
+                        <p>
+                            All regional and provincial offices’ budgets were collected apart from the BARMM. This is because of the relatively new Bangsamoro Organic Law which provides fiscal autonomy to the region. The law provides BARMM with the powers to allocate their own budgets and limitedly tax people within their own territory. Hence it is hard to measure the inequality with the budget of BARMM in relation with the other executive departments. 
+                        </p>
+        
+                        <p>
+                            For each department, their budget allocations will be grouped by Region (excluding BARMM). Given a time span of 2020-2024, we have a total of 1360 Observations.
+                        </p>
+                    </div>    
+                    <div class="row gap-3 mb-4">
+                        <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary boxes">
+                            <h1>17</h1>
+                            <h6>Depts.</h6>
+                        </div>
+                        <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary boxes">
+                            <h1>16</h1>
+                            <h6>Regions</h6>
+                        </div>
+                        <div class="col p-4 card bg-white border border-secondary-subtle rounded-4 text-secondary boxes">
+                            <h1>5</h1>
+                            <h6>Years</h6>
+                        </div>
+                        <div class=" boxes col bg-primary p-4 card bg-gray glow-fixed rounded-4">
+                            <h1 class="fw-bold">1360</h1>
+                            <h6>Observations</h6>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
             </div>
-        </div> 
-        <div class="row mb-3">
-            <h4 class="mb-4">Data Collection</h4>
-            <p>
-                Data regarding the budget allocations and specific projects of the DPWH was gathered from the documents and files publicly released by the Department of Budget and Management. Only the years 2020-2024 were collected as they were the only ones with available Excel files of the General Appropriations Act, the law passed by Congress each year which provided specific details on the budgets of each government agency for that year. 
-            </p>
-            <p>
-                Data regarding crops, fisheries, and farmland, which was gathered to correlate with the Department of Agriculture and Department of Agrarian Reform, was gathered from OpenStat PSA website.
-            </p>                    
-            <p>
-                Data regarding the enrollment data of DepED was found from a multitude of sources. Certain years were provided by DepED itself in its website, meanwhile others were taken from images DepED provided to news outlets, and others were taken from posts made by the official DepED account on Facebook. 
-            </p>                    
-            <p>
-                Data regarding population was gathered from the Projected Mid-Year Population from the PSA website.
-            </p> 
-            <p>                    
-                Data regarding the annual per capita poverty threshold and poverty incidence was gathered from the 2023 Full Year Official Poverty Statistics Tables from the PSA website. Only the years 2018, 2021, and 2023 were collected as they were the only ones available in the Excel file.
-            </p>
-            <p>
-                Data regarding GDP was gathered from the PSA and OpenStat PSA websites. For the Regional Data, only the years 2020-2023 are available. For the Province/HUC breakdown, only the years 2021-2023 are available.
-            </p>      
-        </div>              
-        <div class="row mb-3">
-            <h4 class="mb-4">Data Set Size</h4>
-            
-            
+
+            <div class="row mb-4">
+                <p>
+                    The <span class="emph text-primary">main dataset</span> includes the budget allocations of the 17 departments listed below.
+                </p>
+
+                <!-- Container for the dept logos -->
+                <div id="dept-logos" class="dept-logos"></div>
+    
+                <!-- Modals -->
+                <div id="dept-modals"></div>
+    
+                <div class="alert alert-light" role="alert">
+                    <i class="bi bi-info-circle me-3"></i> Click on each of them to know how the data will be pre-processed!
+                </div>
+            </div> 
+
+            <div class="data-set">
+                <div class="mb-3 dt glow">
+                    <div class="card-body">
+                        <h4 class="topic text-bg-primary mb-2 emph p-2 ps-4 pe-4">DATA COLLECTION</h4>
+                        <div class="data-content">
+                            <p>
+                                Data regarding the budget allocations and specific projects of the DPWH was gathered from the documents and files publicly released by the Department of Budget and Management. Only the years 2020-2024 were collected as they were the only ones with available Excel files of the General Appropriations Act, the law passed by Congress each year which provided specific details on the budgets of each government agency for that year. 
+                            </p>
+                            <p>
+                                Data regarding crops, fisheries, and farmland, which was gathered to correlate with the Department of Agriculture and Department of Agrarian Reform, was gathered from OpenStat PSA website.
+                            </p>                    
+                            <p>
+                                Data regarding the enrollment data of DepED was found from a multitude of sources. Certain years were provided by DepED itself in its website, meanwhile others were taken from images DepED provided to news outlets, and others were taken from posts made by the official DepED account on Facebook. 
+                            </p>                    
+                            <p>
+                                Data regarding population was gathered from the Projected Mid-Year Population from the PSA website.
+                            </p> 
+                            <p>                    
+                                Data regarding the annual per capita poverty threshold and poverty incidence was gathered from the 2023 Full Year Official Poverty Statistics Tables from the PSA website. Only the years 2018, 2021, and 2023 were collected as they were the only ones available in the Excel file.
+                            </p>
+                            <p>
+                                Data regarding GDP was gathered from the PSA and OpenStat PSA websites. For the Regional Data, only the years 2020-2023 are available. For the Province/HUC breakdown, only the years 2021-2023 are available.
+                            </p>  
+                        </div>
+                    </div>
+                </div>     
+            </div>         
         </div>
     </div>
 
     <div id="methodology" class="content container">
-        <div class="row">
-            <object type="text/html" style="width:100%; height: 60vh;" data="data/plot_2023.html"></object>
+        <div class="flex-container">
+            <div class="row mb-3">
+                <h1 class="mb-4 me-4">Exploratory Data Analysis</h1>
+                <object type="text/html" style="width:100%; height: 60vh;" data="data/plot_2023.html"></object>
+            </div>
+            <div class="row mb-3">
+                <h1 class="mb-4 me-4">Machine Learning</h1>
+                <div class="cn">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>  
+            </div>
         </div>
     </div>
-    <div id="conclusion"></div>
-    <div id="about-us"></div>
+    <div id="conclusion" class = "content container">
+        <div class="row mb-3">
+            <h1 class="mb-4 me-4">Results</h1>
+        </div>
+    </div>
+
+    <div id="about-us" class="content container mb-4">
+        <div class="flex-container">
+            <div class="row mb-3">
+                <h1 class="mb-4 text-start">About Us</h1>
+            </div>
+            <div class="mb-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est. Suspendisse potenti. In dapibus nunc vitae justo blandit ullamcorper. Duis sit amet mauris vitae nisi tristique finibus. In semper tortor id orci varius tempor.</p>
+            </div>
+            <div class="row mb-4 w-100 text-center gap-4">
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://i.pinimg.com/736x/f3/fa/94/f3fa9404689a4cb73dedc5b0b855ad68.jpg">
+                    <div>
+                        <h4 class="fw-bold">Gav</h4>
+                        <span>Gavril Benedict Coronel</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/gdbpursuit" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @gdbpursuit</button></a>
+                        <a href="https://www.linkedin.com/in/gb-coronel/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQF1y9Az6zSRfA/profile-displayphoto-shrink_800_800/B56ZWy3fmLHQAk-/0/1742462647214?e=1751500800&v=beta&t=9Itp2ST6SSyxbAFdoMIKlqT4YyMru7zWl1v5JgaQ-B4">
+                    <div>
+                        <h4 class="fw-bold">Nich</h4>
+                        <span>Nicholas John Reyes</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/Njlr41" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @Njlr41</button></a>
+                        <a href="https://www.linkedin.com/in/nicholas-reyes41/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                
+            </div>
+            <div class="row w-100 text-center gap-4">
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQHBjg_BLc_1-w/profile-displayphoto-shrink_800_800/B56ZXnjHgkGcAc-/0/1743346498202?e=1751500800&v=beta&t=0gk3QdvFDnMCXi6mZdnCht6FpjAJl__XuLRunNfK78Q">
+                    <div>
+                        <h4 class="fw-bold">Bopie</h4>
+                        <span>Jopeth Bryan Seda</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/pingu204" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @pingu204</button></a>
+                        <a href="https://www.linkedin.com/in/jopeth-bryan-seda/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQGe5tjGojlL2w/profile-displayphoto-shrink_800_800/B56ZWKUKwRGoAw-/0/1741782298266?e=1751500800&v=beta&t=KMZtsd3pKaPXRyJZHeaTGqyUbw4P7c572GK_eC2qOss">
+                    <div>
+                        <h4 class="fw-bold">GV</h4>
+                        <span>Carl Geevee Vitug</span>
+                    </div>
+                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    </p>
+                    <div>
+                        <a href="https://github.com/good-vibe" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @good-vibe</button></a>
+                        <a href="https://www.linkedin.com/in/cgvitug/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
+                        
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 <script type="text/javascript" src="assets/data.js"></script>
 <script type="text/javascript" src="assets/script.js""></script>
