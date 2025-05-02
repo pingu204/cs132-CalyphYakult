@@ -7,6 +7,15 @@ body {
     --white: white;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
 .dm-sans-bold {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -16,7 +25,7 @@ body {
 
 .navbar {
     height: 8vh;
-    font-size: 10pt;
+    font-size: 11pt;
     position: fixed;
     width: 100%;
     /* background: white; */
@@ -29,14 +38,14 @@ body {
 
 .navbar.sticking {
     background: var(--white);
-    box-shadow: 0 0 100px #c2dafd;
+    box-shadow: 0 0 50px #c2dafd;
 }
 
 .navbar.sticking a:hover {
     color: #0c6bfc;
 }
 
-.nav-link, .nav-link.disabled {
+.nav-link {
     font-weight: bold;
     color: black;
     /* text-transform: uppercase; */
@@ -103,7 +112,7 @@ div.text-landing {
     backface-visibility: hidden;
     display: block; 
 }
-z   
+
 .piso-front {
     transform: rotateY(0deg);
 }
@@ -124,13 +133,71 @@ z
     }
 }
 
-
-
 div.content {
-    padding: 150px 250px 150px 250px;
+    /* padding: 150px 250px 150px 250px; */
     min-height: 100vh;
+    min-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.rq-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rq {
+    display: flex;
+    justify-content: center;
+    width: calc(100% + 200px);
+    transition: width 0.3s ease;
+}
+
+.fixing {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+.card {
+    border: none;
+    background: linear-gradient(to right, transparent, #0c6bfc, transparent);
+    padding: 5px;
+}
+
+.bg-gray {
+    display: flex;
+    background: #f9fafc;
+    background: linear-gradient(150deg, #f9fafc, transparent);
+    flex: 1 1 45%; 
+    border: 2px solid #fafafa;
+    height: auto;
+    justify-content: center;
+}
+
+.glow {
+    transition: 0.1s linear;
+}
+
+.glow:hover, .glow-fixed {
+    box-shadow: 0 0 40px #c2dafd;
 }
 
 span.title {
@@ -145,24 +212,6 @@ span.title {
 .badge {
     border-radius: 1000px;
     padding: 5px 10px 5px 10px;
-}
-
-.card {
-    border: none;
-    background: linear-gradient(to right, transparent, #0c6bfc, transparent);
-}
-
-.bg-gray {
-    background: #f9fafc;
-    background: linear-gradient(150deg, #f9fafc, transparent);
-    border: 2px solid #f9fafc;
-}
-.glow {
-    transition: 0.1s linear;
-}
-
-.glow:hover {
-    box-shadow: 0 0 100px #c2dafd;
 }
 
 .bg-white {
@@ -195,9 +244,14 @@ div.hypotheses {
     column-gap: 0.5em;
 }
 
+/* .tek {
+    background-color: green;
+} */
+
 div.dept-logos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
     margin-top: 1em;
     margin-bottom: 1em;
     column-gap: 2em;
@@ -209,13 +263,92 @@ div.dept-logos img {
     height: auto;
     filter:grayscale(100%);
     opacity: 50%;
-    transition: 0.3s;
+    transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
 div.dept-logos img:hover{
     opacity: 100%;
     filter:grayscale(0%);
     z-index: 1;
+}
+
+/* Sa script.js ko dineclare to */
+.customStuff {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.boxes {
+    transition: width 0.3s ease !important;
+}
+
+.data-set {
+    display: flex;
+    width: calc(100% + 200px);
+    gap: 35px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.dt {
+    display: flex;
+    flex-direction: column;
+    background: #f9fafc;
+    background: linear-gradient(150deg, #f9fafc, transparent);
+    flex: 1 1 45%; 
+    border: 2px solid #fafafa;
+    border-radius: 5px;
+    height: auto;
+    padding: 20px;
+    /* background-color: red; */
+}
+
+
+.topic {
+    display: inline-block;
+    border-radius: 1000px;
+    padding: 2px 10px;
+    line-height: 1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: blue;
+}
+
+.data-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+
+@media (max-width: 1200px) {
+    .rq {
+        flex-direction: column;
+    }
+
+    .testing .row {
+        display: flex !important ; 
+        flex-wrap: wrap !important ;
+    }
+
+    .testing .row > .col:nth-child(1),
+    .testing .row > .col:nth-child(2),
+    .testing .row > .col:nth-child(3) {
+        flex: 1 1 30% !important ;
+    }
+
+    .testing .row > .col:nth-child(4) {
+        flex: 1 1 100% !important ;
+    }
+
+    .flex-container {
+        width: 80%;
+    }
+
+    .data-set {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -225,4 +358,16 @@ div.dept-logos img:hover{
     .main-btn {
         flex-direction: column;
     }
+
 }
+
+/* Icons */
+
+.fluent-color--question-circle-16 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none'%3E%3Cpath fill='url(%23fluentColorQuestionCircle160)' d='M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8'/%3E%3Cpath fill='url(%23fluentColorQuestionCircle161)' d='M8 10.5A.75.75 0 1 0 8 12a.75.75 0 0 0 0-1.5m0-6a2 2 0 0 0-2 2a.5.5 0 0 0 1 0a1 1 0 0 1 2 0c0 .37-.083.58-.366.898l-.116.125l-.264.27C7.712 8.36 7.5 8.768 7.5 9.5a.5.5 0 0 0 1 0c0-.37.083-.58.366-.898l.116-.125l.264-.27C9.788 7.64 10 7.232 10 6.5a2 2 0 0 0-2-2'/%3E%3Cdefs%3E%3ClinearGradient id='fluentColorQuestionCircle160' x1='2' x2='14' y1='2' y2='14' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230fafff'/%3E%3Cstop offset='1' stop-color='%232764e7'/%3E%3C/linearGradient%3E%3ClinearGradient id='fluentColorQuestionCircle161' x1='6.35' x2='8.557' y1='4.632' y2='12.221' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23fdfdfd'/%3E%3Cstop offset='1' stop-color='%23cceaff'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
+  }
