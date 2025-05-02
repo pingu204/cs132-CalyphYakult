@@ -1,0 +1,81 @@
+REGION,region_name,YEAR,peso_per_person
+1,Ilocos Region,2024,14183.37
+2,Cagayan Valley,2024,17021.23
+3,Central Luzon,2024,9670.75
+4,Calabarzon,2024,7515.88
+5,Bicol Region,2024,15256.94
+6,Western Visayas,2024,12229.78
+7,Central Visayas,2024,11694.56
+8,Eastern Visayas,2024,15887.24
+9,Zamboanga Peninsula,2024,14955.81
+10,Northern Mindanao,2024,13611.11
+11,Davao,2024,11943.04
+12,Soccsksargen,2024,10740.75
+13,Metro Manila,2024,13658.05
+14,Cordillera Administrative Region,2024,20292.86
+16,Caraga,2024,15782.31
+17,Mimaropa,2024,15637.38
+1,Ilocos Region,2023,14229.11
+2,Cagayan Valley,2023,17034.83
+3,Central Luzon,2023,9521.81
+4,Calabarzon,2023,7125.62
+5,Bicol Region,2023,14554.29
+6,Western Visayas,2023,11449.57
+7,Central Visayas,2023,11163.13
+8,Eastern Visayas,2023,15874.89
+9,Zamboanga Peninsula,2023,14886.17
+10,Northern Mindanao,2023,12927.81
+11,Davao,2023,11400.52
+12,Soccsksargen,2023,10319.86
+13,Metro Manila,2023,12950.56
+14,Cordillera Administrative Region,2023,18534.42
+16,Caraga,2023,15001.34
+17,Mimaropa,2023,14677.83
+1,Ilocos Region,2022,12427.17
+2,Cagayan Valley,2022,14990.7
+3,Central Luzon,2022,8917.5
+4,Calabarzon,2022,7027.3
+5,Bicol Region,2022,14859.91
+6,Western Visayas,2022,10665.42
+7,Central Visayas,2022,10444.4
+8,Eastern Visayas,2022,15198.27
+9,Zamboanga Peninsula,2022,13368.2
+10,Northern Mindanao,2022,11953.01
+11,Davao,2022,11488.58
+12,Soccsksargen,2022,9798.18
+13,Metro Manila,2022,12333.9
+14,Cordillera Administrative Region,2022,21782.5
+16,Caraga,2022,13998.39
+17,Mimaropa,2022,15210.83
+1,Ilocos Region,2021,11332.87
+2,Cagayan Valley,2021,13755.94
+3,Central Luzon,2021,7921.13
+4,Calabarzon,2021,6709
+5,Bicol Region,2021,13514.23
+6,Western Visayas,2021,10171.06
+7,Central Visayas,2021,9840.73
+8,Eastern Visayas,2021,14390.66
+9,Zamboanga Peninsula,2021,13192.43
+10,Northern Mindanao,2021,11724.99
+11,Davao,2021,11619.74
+12,Soccsksargen,2021,9680.82
+13,Metro Manila,2021,11541.54
+14,Cordillera Administrative Region,2021,20658.16
+16,Caraga,2021,13531.62
+17,Mimaropa,2021,14386.22
+1,Ilocos Region,2020,10336.14
+2,Cagayan Valley,2020,12224.11
+3,Central Luzon,2020,7291.17
+4,Calabarzon,2020,6108.04
+5,Bicol Region,2020,12228.49
+6,Western Visayas,2020,9640.06
+7,Central Visayas,2020,9209.55
+8,Eastern Visayas,2020,12821.14
+9,Zamboanga Peninsula,2020,12587.35
+10,Northern Mindanao,2020,10514.44
+11,Davao,2020,10980.49
+12,Soccsksargen,2020,9317.43
+13,Metro Manila,2020,10715.82
+14,Cordillera Administrative Region,2020,16638.09
+16,Caraga,2020,13153.33
+17,Mimaropa,2020,13224.21
