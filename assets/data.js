@@ -129,3 +129,111 @@ var deptEntries = [
         ]
     }
 ]
+
+var graphEntries = [
+    {
+        "acronym" : "DA",
+        "id" : "da",
+        "title" : "DA's Allocation per Metric Ton of Agri Production",
+        "filename" : "DA - Allocation per Metric Ton of Agri Production",
+    },
+    {
+        "acronym" : "DENR",
+        "id" : "denr",
+        "title" : "DENR's Allocation per Hectare of Agri Land",
+        "filename" : "DENR - Allocation per Hectare of Agri Land",
+    },
+    {
+        "acronym" : "DHSUD",
+        "id" : "dhsud",
+        "title" : "DHSUD's Allocation per Person",
+        "filename" : "DHSUD - Pesos per Person",
+    },
+    {
+        "acronym" : "DICT",
+        "id" : "dict",
+        "title" : "DICT's Allocation per GRDP",
+        "filename" : "DICT - Allocation per GRDP",
+    },
+    {
+        "acronym" : "DILG",
+        "id" : "dilg",
+        "title" : "DILG's Allocation per Person",
+        "filename" : "DILG - Pesos per Person",
+    },
+    {
+        "acronym" : "DOF",
+        "id" : "dof",
+        "title" : "DOF's Allocation per GRDP",
+        "filename" : "DOF - Allocation per GRDP",
+    },
+    {
+        "acronym" : "DOH",
+        "id" : "doh",
+        "title" : "DOH's Allocation per Person",
+        "filename" : "DOH - Pesos per Person",
+    },
+    {
+        "acronym" : "DOJ",
+        "id" : "doj",
+        "title" : "DOJ's Allocation per Person",
+        "filename" : "DOJ - Pesos per Person",
+    },
+    {
+        "acronym" : "DOLE",
+        "id" : "dole",
+        "title" : "DOLE's Allocation per Person",
+        "filename" : "DOLE - Pesos per Person",
+    },
+    {
+        "acronym" : "DOST",
+        "id" : "dost",
+        "title" : "DOST's Allocation per GRDP",
+        "filename" : "DOST - Allocation per GRDP",
+    },
+    {
+        "acronym" : "DOTr",
+        "id" : "dotr",
+        "title" : "DOTr's Allocation per Person",
+        "filename" : "DOTr - Pesos per Person",
+    },
+    {
+        "acronym" : "DPWH",
+        "id" : "dpwh",
+        "title" : "DPWH's Allocation per Person",
+        "filename" : "DPWH - Pesos per Person",
+    },
+    {
+        "acronym" : "DSWD",
+        "id" : "dswd",
+        "title" : "DSWD's Allocation per Person in Poverty",
+        "filename" : "DSWD - Pesos per Person in Poverty",
+    },
+    {
+        "acronym" : "DTI",
+        "id" : "dti",
+        "title" : "DTI's Allocation per GRDP",
+        "filename" : "DTI - Allocation per GRDP",
+    },
+    {
+        "acronym" : "NEDA",
+        "id" : "neda",
+        "title" : "NEDA's Allocation per GRDP",
+        "filename" : "NEDA - Allocation per GRDP",
+    },
+]
+
+depedBudgetEntries = [
+    {
+        "acronym" : "DepEdEnrollees",
+        "id" : "deped-enrollees",
+        "title" : "DepEd's Allocation Adjusted to the Number of Enrollees",
+        "filename" : "DepED - Budget Allocation (PHP) per Enrollee",
+    },
+    {
+        "acronym" : "DepEdSchools",
+        "id" : "deped-schools",
+        "title" : "DepEd's Allocation Adjusted to the Number of Schools",
+        "filename" : "DepED - Budget Allocation (PHP) per School",
+    }
+]

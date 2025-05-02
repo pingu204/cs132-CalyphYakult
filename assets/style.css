@@ -94,6 +94,18 @@ a {
     transition: color 0.3s ease, opacity 0.3s ease, letter-spacing 0.5s ease;
 }
 
+.carousel {
+    height: 75vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.bg-graph {
+    background: #201c1c;
+}
+
 .profile {
     outline: 2px solid #b8d3fc;
     outline-offset: 5px;
