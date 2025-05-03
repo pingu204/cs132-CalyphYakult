@@ -139,7 +139,7 @@ function generateGraphAccordion(graphs, accordionID) {
                 carouselItem.setAttribute("class", "carousel-item h-100 d-flex justify-content-center bg-graph");
             }
             carouselImage = document.createElement("img");
-            carouselImage.setAttribute("src", "data/graphs/" + graph.filename + " (" + (2020 + j).toString() + ").png");
+            carouselImage.setAttribute("src", "data/new_graphs/" + graph.filename + " (" + (2020 + j).toString() + ").png");
             carouselImage.setAttribute("class", "d-block img-fluid");
 
             carouselItem.appendChild(carouselImage);
