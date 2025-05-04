@@ -104,7 +104,7 @@ function generateGraphAccordion(graphs, accordionID) {
         accordionHeader = document.createElement("h2");
         accordionHeader.setAttribute("class", "accordion-header");
         accordionHeaderButton = document.createElement("button");
-        accordionHeaderButton.setAttribute("class", "accordion-button");
+        accordionHeaderButton.setAttribute("class", "accordion-button collapsed");
         accordionHeaderButton.setAttribute("type", "button");
         accordionHeaderButton.setAttribute("data-bs-toggle", "collapse");
         accordionHeaderButton.setAttribute("data-bs-target", "#carousel" + graph.acronym);
@@ -120,7 +120,7 @@ function generateGraphAccordion(graphs, accordionID) {
             accordionCarousel.setAttribute("class", "accordion-collapse collapse show");
         }
         else { */
-            accordionCarousel.setAttribute("class", "accordion-collapse collapse");
+            accordionCarousel.setAttribute("class", "accordion-collapse collapsing");
         // }
         accordionCarousel.setAttribute("data-bs-parent", "#" + accordionID);
         accordionBody = document.createElement("div");

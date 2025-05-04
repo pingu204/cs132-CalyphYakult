@@ -135,13 +135,13 @@ var graphEntries = [
         "acronym" : "DA",
         "id" : "da",
         "title" : "DA's Allocation per Metric Ton of Agri Production",
-        "filename" : "DA - Allocation per Metric Ton of Agri Production",
+        "filename" : "DA - Budget Allocation (PHP) per Volume of Agri-Fish Production",
     },
     {
         "acronym" : "DENR",
         "id" : "denr",
         "title" : "DENR's Allocation per Hectare of Agri Land",
-        "filename" : "DENR - Allocation per Hectare of Agri Land",
+        "filename" : "DENR - Budget Allocation (PHP) per Hectare of Agri Land",
     },
     {
         "acronym" : "DHSUD",
@@ -153,7 +153,7 @@ var graphEntries = [
         "acronym" : "DICT",
         "id" : "dict",
         "title" : "DICT's Allocation per GRDP",
-        "filename" : "DICT - Allocation per GRDP",
+        "filename" : "DICT - Budget Allocation (PHP) per Million Pesos of GRDP",
     },
     {
         "acronym" : "DILG",
@@ -213,13 +213,13 @@ var graphEntries = [
         "acronym" : "DTI",
         "id" : "dti",
         "title" : "DTI's Allocation per GRDP",
-        "filename" : "DTI - Allocation per GRDP",
+        "filename" : "DTI - Budget Allocation (PHP) per GRDP",
     },
     {
         "acronym" : "NEDA",
         "id" : "neda",
         "title" : "NEDA's Allocation per GRDP",
-        "filename" : "NEDA - Allocation per GRDP",
+        "filename" : "NEDA - Budget Allocation (PHP) per GRDP",
     },
 ]
 
