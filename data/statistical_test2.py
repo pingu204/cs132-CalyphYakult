@@ -8,7 +8,7 @@ df = pd.read_csv("question2.csv")
 df['DA_Index'] = df['DA']/df['agri_volume']
 DA_groups = df.groupby('Region')['DA_Index'].apply(list)
 
-df_DAR = df[df['Region'] != 13].copy()
+df_DAR = df[df['Region'] != "National Capital Region (NCR)"].copy()
 df_DAR['DAR_Index'] = df_DAR['DAR']/df_DAR['agri_land']
 DAR_groups = df_DAR.groupby('Region')['DAR_Index'].apply(list)
 
