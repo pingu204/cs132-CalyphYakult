@@ -140,8 +140,8 @@ var graphEntries = [
     {
         "acronym" : "DENR",
         "id" : "denr",
-        "title" : "DENR's Allocation per Hectare of Agri Land",
-        "filename" : "DENR - Budget Allocation (PHP) per Hectare of Agri Land",
+        "title" : "DENR's Allocation per GRDP",
+        "filename" : "DENR - Budget Allocation (PHP) per GRDP",
     },
     {
         "acronym" : "DHSUD",
