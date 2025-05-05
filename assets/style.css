@@ -22,6 +22,17 @@ a {
     text-decoration: none;
 }
 
+.hyperlink {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0c6bfc;
+    transition: 0.3s ease;
+}
+
+.hyperlink:hover {
+    opacity: 0.5;
+}
+
 .dm-sans-bold {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;

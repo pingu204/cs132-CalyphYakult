@@ -157,7 +157,6 @@
             <div class="row mb-4">
                 <div style="display:inline-flex;">
                     <h1 class="mb-4 me-4">Data</h1>
-                    <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline ml-2"><span style="margin-right:10px;">View our dataset</span><i class="bi bi-table"></i></button></a>
                 </div>
     
                 <div class="testing">
@@ -187,9 +186,14 @@
                             <h1>5</h1>
                             <h6>Years</h6>
                         </div>
-                        <div class=" boxes col bg-primary p-4 card bg-gray glow-fixed rounded-4">
-                            <h1 class="fw-bold">1360</h1>
-                            <h6>Observations</h6>
+                        <div class=" boxes col bg-primary p-4 card bg-gray glow-fixed rounded-4 w-auto d-flex flex-row align-items-center">
+                            <div>
+                                <h1 class="fw-bold">1360</h1>
+                                <h6>Observations</h6>
+                            </div>
+                            <div class="flex-grow-1">
+                            </div>
+                            <a href="https://docs.google.com/spreadsheets/d/1eIvLyOlwaDle2Q_PStu8PRXkqNj5bCdYr-R7MbUp1qU/edit?usp=sharing" target="_blank"><button class="btn btn-outline ml-2"><span style="margin-right:10px;"><span class="d-none d-md-inline">View our </span>Dataset</span><i class="bi bi-table"></i></button></a>
                         </div>
                     </div>
                     
@@ -270,21 +274,22 @@
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Hypothesis Testing</h6>
                                 <div class="findings">
-                                <div class="hypotheses">
+                                <span class="fw-medium text-secondary">Recall:</span>
+                                <div class="hypotheses ps-3 border-start border-secondary-subtle">
                                     <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
                                     <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
                                 </div>
                                 <p>
-                                    To test our hypothesis we applied the Kruskal-Wallis H Test to assess if there exists a statistically significant difference between regions in terms of the allocated budget for DepED, after adjusting for the number of enrollees and the number of schools.
-                                    <br>
-                                    <br>
-                                    For the budget adjusted to the number of enrollees, a <b>p-value of 0.00934</b> was produced by the test.
-                                    <br>
-                                    <br>
-                                    For the budget adjusted to the number of schools, a <b>p-value of 1.78304 x 10^-9</b> was produced by the test.
-                                    <br>
-                                    <br>                                                                
-                                    Since both tests produced a p-value less than 0.05, the <b>Null Hypothesis is rejected</b>.
+                                    To test our hypothesis we applied the <a class="hyperlink" href="https://colab.research.google.com/drive/1NIlIKPGD9mmopxwzjFQ_zKEzLJZ68gro?usp=sharing" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="View the code in Google Colab">Kruskal-Wallis H Test <i class="bi bi-box-arrow-up-right"></i></a> to assess if there exists a statistically significant difference between regions in terms of the allocated budget for DepED, after adjusting for the number of enrollees and the number of schools.
+                                </p>
+                                <p>
+                                    For the budget adjusted to the number of enrollees, a <b>p-value of <kbd>0.00934</kbd></b> was produced by the test.
+                                </p>
+                                <p>
+                                    For the budget adjusted to the number of schools, a <b>p-value of <kbd>1.78304 x 10^-9</kbd></b> was produced by the test.
+                                </p>
+                                <p>                                                            
+                                    Given that both tests produced a p-value less than <kbd>0.05</kbd>, the <b><span>Null Hypothesis</span> is rejected</b>, suggesting that there is a significant disparity in DepEd's regional budget allocation when adjusted for the number of students and schools.
                                 </p>
                                 </div>
                             </div>
@@ -314,15 +319,18 @@
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Hypothesis Testing</h6>
                                 <div class="findings">
-                                    <div class="hypotheses">
-                                        <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
-                                        <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
+                                    <span class="fw-medium text-secondary">Recall:</span>
+                                    <div class="hypotheses ps-3 border-start border-secondary-subtle">
+                                        <i class="bi bi-slash-circle"></i><span>Each government department in the Philippines provides equitable budget allocation across all regions in the country.</span>
+                                        <i class="bi bi-h-circle"></i><span>Not all government departments in the Philippines provide equitable budget allocation across all regions in the country.</span>
                                     </div>
                                     <p>
-                                        To test our hypothesis we applied the Kruskal-Wallis H Test to assess if there exists a statistically significant difference between regions in terms of the allocated budget for each department, after adjusting for demand. 
-                                        <br>
-                                        <br>
+                                        To test our hypothesis we applied the <a class="hyperlink" href="https://colab.research.google.com/drive/1a_rhp5CFl6QYjX3uX0wa0fQ6eLJwT_xV?usp=sharing" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="View the code in Google Colab">Kruskal-Wallis H Test <i class="bi bi-box-arrow-up-right"></i></a> to assess if there exists a statistically significant difference between regions in terms of the allocated budget for each department, after adjusting for demand. 
+                                    </p>
+                                    <p>
                                         The summary of the results of the test for each department and their corresponding demands can be seen in the table below.
+                                    </p>
+                                    <p>
                                         <br>
                                         <br>
                                         ===============
@@ -333,7 +341,9 @@
                                         ===============
                                         <br>
                                         <br>
-                                        Since all the tests produced a p-value less than 0.05, <b>the Null Hypothesis is rejected</b>.
+                                    </p>
+                                    <p>
+                                        Since all the tests produced a p-value less than <kbd>0.05</kbd>, <b>the Null Hypothesis is rejected</b>, suggesting that not all government departments in the Philippines provide equitable budget allocation across all regions in the country.
                                     </p>
                                 </div>
                             </div>
@@ -425,7 +435,7 @@
                         <h4 class="fw-bold">Gav</h4>
                         <span>Gavril Benedict Coronel</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
                         Hello there! I'm Gav, a BS Computer Science student at the University of the Philippines Diliman. I'm interested in playing video games, singing, and programming — and I recently discovered my passion for full-stack web development. 😎
                     </p>
                     <div>
@@ -440,7 +450,7 @@
                         <h4 class="fw-bold">Nich</h4>
                         <span>Nicholas John Reyes</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 8pt;">
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
                     </p>
                     <div>
@@ -453,13 +463,15 @@
             </div>
             <div class="row w-100 text-center gap-4">
                 <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
-                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D5603AQHBjg_BLc_1-w/profile-displayphoto-shrink_800_800/B56ZXnjHgkGcAc-/0/1743346498202?e=1751500800&v=beta&t=0gk3QdvFDnMCXi6mZdnCht6FpjAJl__XuLRunNfK78Q">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.discordapp.net/attachments/781872349494509588/1368598887786614824/IMG_20250322_020406.jpg?ex=6818ce8a&is=68177d0a&hm=6b522e075b1566db8e74595d97fd05bb074dd8e1c6c63c80f8b3140cea126c17&=&format=webp&width=930&height=930">
                     <div>
-                        <h4 class="fw-bold">Bopie</h4>
+                        <h4 class="fw-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="As in 'Bopee', not 'Bo-pie'">Bopie</h4>
                         <span>Jopeth Bryan Seda</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 8pt;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
+                        Hello! I'm Bopie, a sleep-deprived penguin 🐧 with occasional back pains, BLACKPINK's first line of defense, and a bit of a Computer Science junior at the University of the Philippines-Diliman 🌻.
+                        <br><br>
+                        My mother wanted me to become a doctor, but I hated biology. I ended up becoming someone who loves bringing software and design ideas into life, so I guess that still counts! 
                     </p>
                     <div>
                         <a href="https://github.com/pingu204" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @pingu204</button></a>
@@ -473,8 +485,8 @@
                         <h4 class="fw-bold">GV</h4>
                         <span>Carl Geevee Vitug</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 8pt;">
-                        Hello! I’m GV, a BS Computer Science Student, studying in the University of the Philippines Diliman. I have a great interest in history, economics, finances and programming. I love to play video games, watch animes and K-Dramas and read mangas and light novels in my spare time. 🙂‍↕️
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
+                        Hello! I'm GV, a BS Computer Science Student, studying in the University of the Philippines Diliman. I have a great interest in history, economics, finances and programming. I love to play video games, watch animes and K-Dramas and read mangas and light novels in my spare time.  🙂‍↕️
                     </p>
                     <div>
                         <a href="https://github.com/good-vibe" target="_blank"><button type="button" class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @good-vibe</button></a>
