@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/style.css">
 
     <!-- Fonts -->
@@ -34,7 +33,7 @@
                     <a class="nav-link" href="#overview"><i class="fa-solid fa-magnifying-glass"></i>Overview</a>
                     <a class="nav-link" href="#data"><i class="fa-solid fa-chart-simple"></i>Data</a>
                     <a class="nav-link" href="#methodology"><i class="fa-solid fa-flask"></i>Methodology</a>
-                    <a class="nav-link" href="#conclusion"><i class="fa-solid fa-lightbulb"></i>Conclusion</a>
+                    <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Coming soon!"><a class="nav-link disabled" href="#conclusion"><i class="fa-solid fa-lightbulb"></i>Conclusion</a></span>
                     <a class="nav-link" href="#about-us"><i class="fa-solid fa-user"></i>About Us</a>
                 </div>
             </div>
@@ -76,16 +75,12 @@
             <img class="piso-front" src="assets/images/coin.png" alt="Heads">
             <img class="piso-back" src="assets/images/tail.png" alt="Tails">
         </div>
-        <div class="text-landing">
+        <div class="text-landing mb-4">
             <!-- <span>REDUCED INEQUALITY</span> -->
-            <span class="display-2 fw-bold">Making Every Peso Count</span>
-            <p class="placeholder-glow">
-                <span class="placeholder col-7"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-6"></span>
-                <span class="placeholder col-8"></span>
-            </p>
+            <span class="display-2 mb-0 fw-bold">Making Every Peso Count</span>
+            <span class="fs-6 lh-base fw-medium">
+                UNESCO proposes that each country should allocate 4% of its GDP to education. Using this metric, an ideal budget for each region could be determined and each of them could then be measured in how underfunded they were. This project aims to determine if the appropriations in the national budget were truly appropriate, considering each region’s demands, with a primary focus on the Department of Education. 
+            </span>
         </div>
         <div class="main-btn">
             <a href="https://sdgs.un.org/goals/goal10" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Learn about the 10th sustainable development goal!"><button class="btn btn-outline"><span style="margin-right:10px;"><span class="emph">SDG 10</span> Reduced Inequality</span><i class="bi bi-arrow-up-right"></i></button></a>
@@ -220,8 +215,9 @@
             <div class="data-set">
                 <div class="mb-3 dt glow">
                     <div class="card-body">
-                        <h4 class="topic text-bg-primary mb-2 emph p-2 ps-4 pe-4">DATA COLLECTION</h4>
+                        <span class="badge text-bg-primary mb-2 emph">DATA COLLECTION</span>
                         <div class="data-content">
+                            <h4 class="mb-3">Where did we get our data?</h4>
                             <p>
                                 Data regarding the budget allocations and specific projects of the DPWH was gathered from the documents and files publicly released by the Department of Budget and Management. Only the years 2020-2024 were collected as they were the only ones with available Excel files of the General Appropriations Act, the law passed by Congress each year which provided specific details on the budgets of each government agency for that year. 
                             </p>
@@ -249,7 +245,7 @@
 
     <div id="methodology" class="content container">
         <div class="flex-container">
-            <div class="mb-3">
+            <div class="mb-6">
                 <h1 class="mb-4 me-4">Exploratory Data Analysis</h1>
                 <!-- <object type="text/html" style="width:100%; height: 60vh;" data="data/plot_2023.html"></object> -->
                 <div class="card bg-gray glow mb-4">
@@ -268,13 +264,13 @@
                                         When adjusted for the number of enrollees, we can see that throughout 2020 to 2023, the region with the most budget allocation per enrollee has been the Cordillera Administrative Region (CAR). However, by 2024, MIMAROPA will have taken this lead. On the other side of the spectrum, Calabarzon consistently had the lowest per-enrollee budget allocation throughout 2020 to 2024. 
                                     </p>
                                     <p>
-An increase in the budget allocation of DepEd can be observed in the latter years, but the disparity between the regional allocations also becomes more apparent because of a wider range of colors present in the map.
+                                        An increase in the budget allocation of DepEd can be observed in the latter years, but the disparity between the regional allocations also becomes more apparent because of a wider range of colors present in the map.
                                     </p>
                                     <p>
-Looking at the per-school budget allocation of DepEd, the National Capital Region received the most budget from 2020 to 2024. NCR is seen to have this bias since it has a relatively high budget despite having the lowest number of schools compared to the other regions, which can also be observed through the colors of the map, with NCR being the only region receiving the upper range of the budget.
+                                        Looking at the per-school budget allocation of DepEd, the National Capital Region received the most budget from 2020 to 2024. NCR is seen to have this bias since it has a relatively high budget despite having the lowest number of schools compared to the other regions, which can also be observed through the colors of the map, with NCR being the only region receiving the upper range of the budget.
                                     </p>
                                     <p>
-This bias is not seen when taking into account the number of enrollees, as NCR has a proportionate amount of enrollees with respect to its budget. CAR, on the other hand, has had the least amount of budget allocation per school throughout 2020-2024, despite having a relatively high budget allocation per enrollee throughout the entirety of 2020-2024. 
+                                        This bias is not seen when taking into account the number of enrollees, as NCR has a proportionate amount of enrollees with respect to its budget. CAR, on the other hand, has had the least amount of budget allocation per school throughout 2020-2024, despite having a relatively high budget allocation per enrollee throughout the entirety of 2020-2024. 
                                     </p>
                                 </div>
                             </div>
@@ -298,7 +294,8 @@ This bias is not seen when taking into account the number of enrollees, as NCR h
                                     For the budget adjusted to the number of schools, a <b>p-value of <kbd>1.78304 x 10^-9</kbd></b> was produced by the test.
                                 </p>
                                 <p>                                                            
-                                    Given that both tests produced a p-value less than <kbd>0.05</kbd>, the <b><span>Null Hypothesis</span> is rejected</b>, suggesting that there is a significant disparity in DepEd's regional budget allocation when adjusted for the number of students and schools.
+                                    Given that both tests produced a p-value less than <kbd>0.05</kbd>, the <b><span>Null Hypothesis</span> is rejected</b>, suggesting that<br>
+                                    <h4 class="card-title text-center ps-3 pe-3 mb-0">There is a significant disparity in DepEd's regional budget allocation when adjusted for the number of students and schools.</h4> 
                                 </p>
                                 </div>
                             </div>
@@ -306,7 +303,7 @@ This bias is not seen when taking into account the number of enrollees, as NCR h
                     </div>
                 </div>
 
-                <div class="card bg-gray glow">
+                <div class="card bg-gray glow mb-4">
                     <div class="card-body">
                         <span class="badge text-bg-primary mb-2 emph">RESEARCH QUESTION 2</span>
                         <h4 class="card-title">How does budget allocation vary across government departments at the regional level when adjusted for their respective needs?</h4>
@@ -314,7 +311,7 @@ This bias is not seen when taking into account the number of enrollees, as NCR h
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Data Visualization</h6>
                                 <p>
-                                    To understand our data better, we plotted the budget alloted by each department per region when adjust for their respective needs.
+                                    To understand our data better, we plotted the budget alloted by each department per region when adjusted for their respective needs.
                                 </p>
                                 <div class="findings">
                                     <div class="accordion" id="deptBudgetsAccordion"></div>
@@ -325,20 +322,19 @@ This bias is not seen when taking into account the number of enrollees, as NCR h
                                         In other social services, particularly those related to the law, such as judicial and public safety, there was a great inequality in the funding between the regions, where the National Capital Region received a considerably larger allocation compared to the other regions. In particular, the DOJ and DILG had the NCR receive a larger portion compared to the other regions, as their maps show such a great disparity. This imbalance in funding just reflects the centralization of the judicial and police forces within the Philippines, where most of our funding towards jails and law enforcement is centered in the capital.
                                     </p>
                                     <p>
-In social welfare and ayuda programs, the poor in NCR saw higher allocation compared to other regions. This reflects the greater concentration of social welfare programs for the urban poor, especially in the NCR.
+                                        In social welfare and ayuda programs, the poor in NCR saw higher allocation compared to other regions. This reflects the greater concentration of social welfare programs for the urban poor, especially in the NCR.
                                     </p>
                                     <p>
-For transportation and public works, certain regions are funded less. These regions typically include regions within the south of Luzon, Visayas, and Mindanao. The CAR saw that it was consistently funded well as its population and GRDP are quite low, and yet their funding has not been that far from the funding of other regions. 
+                                        For transportation and public works, certain regions are funded less. These regions typically include regions within the south of Luzon, Visayas, and Mindanao. The CAR saw that it was consistently funded well as its population and GRDP are quite low, and yet their funding has not been that far from the funding of other regions. 
                                     </p>
                                     <p>
-For health, the NCR, CAR, and Davao regions saw consistently higher funding compared to the other regions as which could reflect the lower population count for the case of CAR and the higher number of public hospitals and medical services in NCR and Davao compared to other regions. 
+                                        For health, the NCR, CAR, and Davao regions saw consistently higher funding compared to the other regions as which could reflect the lower population count for the case of CAR and the higher number of public hospitals and medical services in NCR and Davao compared to other regions. 
                                     </p>
                                     <p>
-For finance, trade, and economic development, certain regions in the North, and Mindanao and Visayas, saw higher funding, especially when compared to richer regions such as the NCR, CALABARZON, Central Luzon, Central Visayas, and Davao. This goes to show that despite certain regions having a greater contribution to the country’s GDP, the funding in the departments remains relatively equal throughout all the regions. Interestingly, MIMAROPA remained constantly less funded in the DOF. 
+                                        For finance, trade, and economic development, certain regions in the North, and Mindanao and Visayas, saw higher funding, especially when compared to richer regions such as the NCR, CALABARZON, Central Luzon, Central Visayas, and Davao. This goes to show that despite certain regions having a greater contribution to the country’s GDP, the funding in the departments remains relatively equal throughout all the regions. Interestingly, MIMAROPA remained constantly less funded in the DOF. 
                                     </p>
                                     <p>
-Despite our initial guesses of over-concentration of funds in the National Capital Region, when excluding the budgets of the Central Offices, we found that numerous departments underfunded the NCR, especially when considering its large population and GDP. These departments include: DHSUD, DICT, DOLE, DOST, DPWH, DTI, and NEDA.
-
+                                        Despite our initial guesses of over-concentration of funds in the National Capital Region, when excluding the budgets of the Central Offices, we found that numerous departments underfunded the NCR, especially when considering its large population and GDP. These departments include: DHSUD, DICT, DOLE, DOST, DPWH, DTI, and NEDA.
                                     </p>
                                 </div>
                             </div>
@@ -449,13 +445,28 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                                         </tr>
                                     </table>
                                     <p>
-                                        Since all the tests produced a p-value less than <kbd>0.05</kbd>, <b>the Null Hypothesis is rejected</b>, suggesting that not all government departments in the Philippines provide equitable budget allocation across all regions in the country.
+                                        Since all the tests produced a p-value less than <kbd>0.05</kbd>, <b>the Null Hypothesis is rejected</b>, suggesting that <br>
+                                        <h4 class="card-title text-center ps-3 pe-3 mb-0">Not all government departments in the Philippines are providing equitable budget allocation across all regions in the country.</h4>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="card bg-dark-dark glow mb-4">
+                    <div class="card-body">
+                        <span class="badge text-bg-primary mb-4 emph">IN A NUTSHELL...</span>
+                        <h2 class="card-title fw-medium text-white text-center" style="margin-bottom: 0;">Highlighting <span class="text-white">Regional Inequality in Education</span></h2>
+                        <img src="data/plots/Nutshell Plot.png" class="w-100 h-auto rounded-3 mb-2">
+                        <p class="text-white" style="margin-bottom: 0;">
+                            Excluding allocations that could possibly originate from the DepEd Central office, certain regions are found to be significantly underfunded compared to others in terms of funding for schools and regional offices. In particular, CALABARZON, with its large student population, falls way behind other regions in terms of funding. Sadly, only 1 region in 2024, MIMAROPA, ever got sufficient funding across all the regions and the 5-year period. Regions with larger student populations such as NCR, CALABARZON, and Central Luzon noticeably are underfunded more than other regions. 
+                        </p>
+                        <!-- <div class="card bg-white border border-secondary-subtle">   
+                        </div> -->
+                    </div>
+                </div>
+
                 <!-- For Reference in Accordions! -->
                 <!-- <div class="accordion" id="deptBudgetsAccordion">
                     <div class="accordion-item">
@@ -498,7 +509,7 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                     </div>
                 </div> -->
             </div>
-            <div class="row mb-3">
+            <!-- <div class="row mb-3">
                 <h1 class="mb-4 me-4">Machine Learning</h1>
                 <p class="placeholder-glow" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Coming soon...?">
                     <span class="placeholder col-7"></span>
@@ -508,10 +519,10 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                     <span class="placeholder col-8"></span>
                 </p>
                 </div>  
-            </div>
+            </div> -->
         </div>
     </div>
-    <div id="conclusion" class = "content container">
+    <!-- <div id="conclusion" class = "content container">
         <div class="flex-container">
             <div class="row mb-3">
                 <h1 class="mb-4 me-4">Conclusions</h1>
@@ -524,7 +535,7 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="about-us" class="content container mb-4">
         <div class="flex-container">
@@ -541,14 +552,13 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                         <h4 class="fw-bold">Gav</h4>
                         <span>Gavril Benedict Coronel</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 10pt;">
-                        Hello there! I'm Gav, a BS Computer Science student at the University of the Philippines Diliman. I'm interested in playing video games, singing, and programming — and I recently discovered my passion for full-stack web development. 😎
-                    </p>
                     <div>
                         <a href="https://github.com/gdbpursuit" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @gbpursuit</button></a>
                         <a href="https://www.linkedin.com/in/gb-coronel/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
                     </div>
-                        
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
+                        Hello there! I'm Gav, a BS Computer Science student at the University of the Philippines Diliman. I'm interested in playing video games, singing, and programming — and I recently discovered my passion for full-stack web development. 😎
+                    </p>
                 </div>
                 <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
                     <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.discordapp.net/attachments/1304968403626491907/1368835765085278259/132_pic.png?ex=6819ab26&is=681859a6&hm=2b5ba363be36e9c9e957316b4b56e02a33f8aafbf9f3950eeada334d59b8eaad&=&format=webp&quality=lossless&width=459&height=459">
@@ -556,16 +566,15 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                         <h4 class="fw-bold">Nick</h4>
                         <span>Nicholas John Reyes</span>
                     </div>
+                    <div>
+                        <a href="https://github.com/Njlr41" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @Njlr41</button></a>
+                        <a href="https://www.linkedin.com/in/nicholas-reyes41/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                    </div>
                     <p class="ps-2 pe-2" style="font-size: 10pt;">
                         Hello! I am Nick 🐵, a Computer Science student at the University of the Philippines, Diliman. 
                         <br><br>
                         I spend my free time (and not-so-free time) reading manhwa and playing games. As for my aspirations, I am never quite sure, but I always try to be the best version of myself 🙂‍↕️.
                     </p>
-                    <div>
-                        <a href="https://github.com/Njlr41" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @Njlr41</button></a>
-                        <a href="https://www.linkedin.com/in/nicholas-reyes41/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
-                    </div>
-                        
                 </div>
                 
             </div>
@@ -576,16 +585,15 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                         <h4 class="fw-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="As in 'Bopee', not 'Bo-pie'">Bopie</h4>
                         <span>Jopeth Bryan Seda</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 10pt;">
-                        Hello! I'm Bopie, a sleep-deprived penguin 🐧 with occasional back pains, BLACKPINK's first line of defense, and a bit of a Computer Science junior at the University of the Philippines-Diliman 🌻.
-                        <br><br>
-                        My mother wanted me to become a doctor, but I hated biology. I ended up becoming someone who loves bringing software and design ideas into life, so I guess that still counts! 
-                    </p>
                     <div>
                         <a href="https://github.com/pingu204" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @pingu204</button></a>
                         <a href="https://www.linkedin.com/in/jopeth-bryan-seda/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
                     </div>
-                        
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
+                        Hello! I'm Bopie, a sleep-deprived penguin 🐧 with occasional back pains, BLACKPINK's first line of defense, and a bit of a Computer Science junior at the University of the Philippines-Diliman 🌻.
+                        <br><br>
+                        My mother wanted me to become a doctor, but I hated biology. I ended up becoming someone who loves bringing software and design ideas into life, so I guess that still counts! 
+                    </p>   
                 </div>
                 <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
                     <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://cdn.discordapp.com/attachments/1351372232257048680/1368859699306565704/20250505_151005.jpg?ex=6819c170&is=68186ff0&hm=c5e608339656797cd59eb720039b9812fc2356d9d769051dbcf7313a0dda99d8&">
@@ -593,16 +601,14 @@ Despite our initial guesses of over-concentration of funds in the National Capit
                         <h4 class="fw-bold">GV</h4>
                         <span>Carl Geevee Vitug</span>
                     </div>
-                    <p class="ps-2 pe-2" style="font-size: 10pt;">
-                        Hello! I'm GV, a BS Computer Science Student, studying in the University of the Philippines Diliman. I have a great interest in history, economics, finances and programming. I love to play video games, watch animes and K-Dramas and read mangas and light novels in my spare time.  🙂‍↕️
-                    </p>
                     <div>
                         <a href="https://github.com/good-vibe" target="_blank"><button type="button" class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @good-vibe</button></a>
                         <a href="https://www.linkedin.com/in/cgvitug/" target="_blank"><button type="button" class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
                     </div>
-                        
+                    <p class="ps-2 pe-2" style="font-size: 10pt;">
+                        Hello! I'm GV, a BS Computer Science Student, studying in the University of the Philippines Diliman. I have a great interest in history, economics, finances and programming. I love to play video games, watch animes and K-Dramas and read mangas and light novels in my spare time.  🙂‍↕️
+                    </p> 
                 </div>
-                
             </div>
         </div>
     </div>

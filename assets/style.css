@@ -248,6 +248,10 @@ div.content {
     justify-content: center;
 }
 
+.bg-dark-dark {
+    background: #1b181c;
+}
+
 .bg-gray-light {
     background: #f9fafc;
     background: linear-gradient(150deg, #f9fafc, transparent);
