@@ -144,7 +144,7 @@ function generateGraphAccordion(graphs, accordionID) {
             carouselItem.setAttribute("class", j === 0 ? "carousel-item h-100 active d-flex justify-content-center bg-graph" : "carousel-item h-100 d-flex justify-content-center bg-graph");
 
             const carouselImage = document.createElement("img");
-            carouselImage.setAttribute("src", "data/new_graphs/" + graph.filename + " (" + (2020 + j).toString() + ").png");
+            carouselImage.setAttribute("src", "data/plots/" + graph.filename + " (" + (2020 + j).toString() + ").png");
             carouselImage.setAttribute("class", "d-block img-fluid");
 
             carouselItem.appendChild(carouselImage);

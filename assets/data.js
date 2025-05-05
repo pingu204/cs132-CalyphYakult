@@ -138,6 +138,12 @@ var graphEntries = [
         "filename" : "DA - Budget Allocation (PHP) per Volume of Agri-Fish Production",
     },
     {
+        "acronym" : "DAR",
+        "id" : "dar",
+        "title" : "DAR's Allocation per Hectare of Agri Land",
+        "filename" : "DAR - Budget Allocation (PHP) per Hectare of Agri Land",
+    },
+    {
         "acronym" : "DENR",
         "id" : "denr",
         "title" : "DENR's Allocation per GRDP",
@@ -153,7 +159,7 @@ var graphEntries = [
         "acronym" : "DICT",
         "id" : "dict",
         "title" : "DICT's Allocation per GRDP",
-        "filename" : "DICT - Budget Allocation (PHP) per Million Pesos of GRDP",
+        "filename" : "DICT - Budget Allocation (PHP) per GRDP",
     },
     {
         "acronym" : "DILG",
@@ -165,7 +171,7 @@ var graphEntries = [
         "acronym" : "DOF",
         "id" : "dof",
         "title" : "DOF's Allocation per GRDP",
-        "filename" : "DOF - Allocation per GRDP",
+        "filename" : "DOF - Budget Allocation (PHP) per GRDP",
     },
     {
         "acronym" : "DOH",
@@ -189,7 +195,7 @@ var graphEntries = [
         "acronym" : "DOST",
         "id" : "dost",
         "title" : "DOST's Allocation per GRDP",
-        "filename" : "DOST - Allocation per GRDP",
+        "filename" : "DOST - Budget Allocation (PHP) per GRDP",
     },
     {
         "acronym" : "DOTr",
