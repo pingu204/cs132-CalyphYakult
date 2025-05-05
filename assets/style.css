@@ -70,6 +70,12 @@ a {
 }
 
 .nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
     font-weight: bold;
     color: inherit;
     /* text-transform: uppercase; */
@@ -190,7 +196,7 @@ div.content {
 .flex-container {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 58%;
     justify-content: center;
     align-items: center;
 }
@@ -369,6 +375,12 @@ div.dept-logos img:hover{
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+}
+
+.findings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 

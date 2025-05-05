@@ -94,51 +94,56 @@ function generateDeptModals(depts) {
 generateDeptModals(deptEntries);
 
 function generateGraphAccordion(graphs, accordionID) {
-    accordionContainer = document.getElementById(accordionID);
+    const accordionContainer = document.getElementById(accordionID);
 
     for (const [i, graph] of graphs.entries()) {
-        accordionItem = document.createElement("div");
+        const accordionItem = document.createElement('div');
         accordionItem.setAttribute("class", "accordion-item");
 
         // Header for Department
-        accordionHeader = document.createElement("h2");
+        const accordionHeader = document.createElement("h2");
         accordionHeader.setAttribute("class", "accordion-header");
-        accordionHeaderButton = document.createElement("button");
+        
+        const headerID = "heading" + graph.acronym; 
+        accordionHeader.setAttribute("id", headerID);
+
+        const accordionHeaderButton = document.createElement("button");
         accordionHeaderButton.setAttribute("class", "accordion-button collapsed");
         accordionHeaderButton.setAttribute("type", "button");
+
+        const targetID = "carousel" + graph.acronym; 
         accordionHeaderButton.setAttribute("data-bs-toggle", "collapse");
-        accordionHeaderButton.setAttribute("data-bs-target", "#carousel" + graph.acronym);
-        accordionHeaderButton.setAttribute("aria-expanded", "true");
-        accordionHeaderButton.setAttribute("aria-controls", "collapseOne");
+        accordionHeaderButton.setAttribute("data-bs-target", "#" + targetID);
+        accordionHeaderButton.setAttribute("aria-expanded", "false");
+        accordionHeaderButton.setAttribute("aria-controls", targetID);
         accordionHeaderButton.innerText = graph.title;
+        
         accordionHeader.appendChild(accordionHeaderButton);
 
         // Accordion for Department
-        accordionCarousel = document.createElement("div");
-        accordionCarousel.setAttribute("id", "carousel" + graph.acronym);
-        /* if (i == 0) {
-            accordionCarousel.setAttribute("class", "accordion-collapse collapse show");
-        }
-        else { */
-            accordionCarousel.setAttribute("class", "accordion-collapse collapsing");
-        // }
+        const accordionCarousel = document.createElement("div");
+        // const targetID = "carousel" + graph.acronym;
+        accordionCarousel.setAttribute("id", targetID);
+        accordionCarousel.setAttribute("class", "accordion-collapse collapse");
+        accordionCarousel.setAttribute("aria-labelledby", headerID);
         accordionCarousel.setAttribute("data-bs-parent", "#" + accordionID);
-        accordionBody = document.createElement("div");
+
+        const accordionBody = document.createElement("div");
         accordionBody.setAttribute("class", "accordion-body");
-        accordionImages = document.createElement("div");
-        accordionImages.setAttribute("id", "carousel-" + graph.id + "-images");
+
+        const accordionImages = document.createElement("div");
+        const imagesID = "carousel-" + graph.id + "-images";
+        accordionImages.setAttribute("id", imagesID);
         accordionImages.setAttribute("class", "carousel slide carousel-fade");
-        accordionInner = document.createElement("div");
+
+        const accordionInner = document.createElement("div");
         accordionInner.setAttribute("class", "carousel-inner h-100");
-        for (let j=0; j<5; j++) {
-            carouselItem = document.createElement("div");
-            if (j == 0) {
-                carouselItem.setAttribute("class", "carousel-item h-100 active d-flex justify-content-center bg-graph");
-            }
-            else {
-                carouselItem.setAttribute("class", "carousel-item h-100 d-flex justify-content-center bg-graph");
-            }
-            carouselImage = document.createElement("img");
+
+        for (let j = 0; j < 5; j++) {
+            const carouselItem = document.createElement("div");
+            carouselItem.setAttribute("class", j === 0 ? "carousel-item h-100 active d-flex justify-content-center bg-graph" : "carousel-item h-100 d-flex justify-content-center bg-graph");
+
+            const carouselImage = document.createElement("img");
             carouselImage.setAttribute("src", "data/new_graphs/" + graph.filename + " (" + (2020 + j).toString() + ").png");
             carouselImage.setAttribute("class", "d-block img-fluid");
 
@@ -146,32 +151,32 @@ function generateGraphAccordion(graphs, accordionID) {
             accordionInner.appendChild(carouselItem);
         }
 
-        carouselPrev = document.createElement("button");
+        const carouselPrev = document.createElement("button");
         carouselPrev.setAttribute("class", "carousel-control-prev");
         carouselPrev.setAttribute("type", "button");
-        carouselPrev.setAttribute("data-bs-target", "#carousel-" + graph.id + "-images");
+        carouselPrev.setAttribute("data-bs-target", "#" + imagesID);
         carouselPrev.setAttribute("data-bs-slide", "prev");
 
-        prevSpan = document.createElement("span");
+        const prevSpan = document.createElement("span");
         prevSpan.setAttribute("class", "carousel-control-prev-icon");
         prevSpan.setAttribute("aria-hidden", "true");
-        prevSpanText = document.createElement("span");
+        const prevSpanText = document.createElement("span");
         prevSpanText.setAttribute("class", "visually-hidden");
         prevSpanText.innerText = "Previous";
 
         carouselPrev.appendChild(prevSpan);
         carouselPrev.appendChild(prevSpanText);
 
-        carouselNext = document.createElement("button");
+        const carouselNext = document.createElement("button");
         carouselNext.setAttribute("class", "carousel-control-next");
         carouselNext.setAttribute("type", "button");
-        carouselNext.setAttribute("data-bs-target", "#carousel-" + graph.id + "-images");
+        carouselNext.setAttribute("data-bs-target", "#" + imagesID);
         carouselNext.setAttribute("data-bs-slide", "next");
 
-        nextSpan = document.createElement("span");
+        const nextSpan = document.createElement("span");
         nextSpan.setAttribute("class", "carousel-control-next-icon");
         nextSpan.setAttribute("aria-hidden", "true");
-        nextSpanText = document.createElement("span");
+        const nextSpanText = document.createElement("span");
         nextSpanText.setAttribute("class", "visually-hidden");
         nextSpanText.innerText = "Next";
 
@@ -190,6 +195,7 @@ function generateGraphAccordion(graphs, accordionID) {
         accordionItem.appendChild(accordionCarousel);
 
         accordionContainer.appendChild(accordionItem);
+        
     }
 }
 

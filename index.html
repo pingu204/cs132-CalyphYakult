@@ -9,6 +9,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/style.css">
@@ -30,11 +31,11 @@
                     <h4 class="fw-medium d-none d-lg-block" style="letter-spacing: -1px;">Making Every Peso Count</h4>
                 </div>
                 <div class="d-flex nav nav-underline fw-medium" style="font-size:10pt;" id="navbarSupportedContent">
-                    <a class="nav-link" href="#overview">Overview</a>
-                    <a class="nav-link" href="#data">Data</a>
-                    <a class="nav-link" href="#methodology">Methodology</a>
-                    <a class="nav-link" href="#conclusion">Conclusion</a>
-                    <a class="nav-link" href="#about-us">About Us</a>
+                    <a class="nav-link" href="#overview"><i class="fa-solid fa-magnifying-glass"></i>Overview</a>
+                    <a class="nav-link" href="#data"><i class="fa-solid fa-chart-simple"></i>Data</a>
+                    <a class="nav-link" href="#methodology"><i class="fa-solid fa-flask"></i>Methodology</a>
+                    <a class="nav-link" href="#conclusion"><i class="fa-solid fa-lightbulb"></i>Conclusion</a>
+                    <a class="nav-link" href="#about-us"><i class="fa-solid fa-user"></i>About Us</a>
                 </div>
             </div>
             <div class="flex-grow"></div>
@@ -257,15 +258,18 @@
                                 <p>
                                     To understand our data better, we plotted the budget alloted by the Department of Education when adjusted to the number of schools and enrollees.
                                 </p>
-                                <div class="accordion" id="depedBudgetAccordion"></div>
-                                <p>
-                                    Main Findings Yap
-                                </p>
+                                <div class="findings">
+                                    <div class="accordion" id="depedBudgetAccordion"></div>
+                                    <p>
+                                        Main Findings Yap
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="card bg-white border border-secondary-subtle">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Hypothesis Testing</h6>
+                                <div class="findings">
                                 <div class="hypotheses">
                                     <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
                                     <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
@@ -273,6 +277,7 @@
                                 <p>
                                     Main findings yap
                                 </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -288,22 +293,26 @@
                                 <p>
                                     To understand our data better, we plotted the budget alloted by each department per region when adjust for their respective needs.
                                 </p>
-                                <div class="accordion" id="deptBudgetsAccordion"></div>
-                                <p>
-                                    Main Findings Yap
-                                </p>
+                                <div class="findings">
+                                    <div class="accordion" id="deptBudgetsAccordion"></div>
+                                    <p>
+                                        Main Findings Yap
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="card bg-white border border-secondary-subtle">
                             <div class="card-body p-4">
                                 <h6 class="card-title emph">Hypothesis Testing</h6>
-                                <div class="hypotheses">
-                                    <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
-                                    <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
+                                <div class="findings">
+                                    <div class="hypotheses">
+                                        <i class="bi bi-slash-circle"></i><span>The Department of Education provides equitable budget allocation across all regions in the Philippines.</span>
+                                        <i class="bi bi-h-circle"></i><span>The Department of Education is not providing equitable budget allocation across all regions in the Philippines.</span>
+                                    </div>
+                                    <p>
+                                        Main findings yap
+                                    </p>
                                 </div>
-                                <p>
-                                    Main findings yap
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -364,15 +373,17 @@
         </div>
     </div>
     <div id="conclusion" class = "content container">
-        <div class="row mb-3">
-            <h1 class="mb-4 me-4">Conclusions</h1>
-            <p class="placeholder-glow" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Papunta palang tayo sa exciting part!">
-                <span class="placeholder col-7"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-4"></span>
-                <span class="placeholder col-6"></span>
-                <span class="placeholder col-8"></span>
-            </p>
+        <div class="flex-container">
+            <div class="row mb-3">
+                <h1 class="mb-4 me-4">Conclusions</h1>
+                <p class="placeholder-glow" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Papunta palang tayo sa exciting part!">
+                    <span class="placeholder col-7"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-4"></span>
+                    <span class="placeholder col-6"></span>
+                    <span class="placeholder col-8"></span>
+                </p>
+            </div>
         </div>
     </div>
 
@@ -380,22 +391,22 @@
         <div class="flex-container">
             <div class="row mb-3">
                 <h1 class="mb-4 text-start">Hi, We are <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Calyph is actually the second name of our good friend!">Calyph Yakult!</span> (ง •̀_•́)ง</h1>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est. Suspendisse potenti. In dapibus nunc vitae justo blandit ullamcorper. Duis sit amet mauris vitae nisi tristique finibus. In semper tortor id orci varius tempor.</p>
-                </div>
+                </div> -->
             </div>
             <div class="row mb-4 w-100 text-center gap-4">
                 <div class="glow col bg-gray-light d-flex flex-column align-items-center gap-2 p-4 rounded-3">
-                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://i.pinimg.com/736x/f3/fa/94/f3fa9404689a4cb73dedc5b0b855ad68.jpg">
+                    <img style="height:150px;" class="mb-2 profile ratio-1x1 rounded-pill" src="https://media.licdn.com/dms/image/v2/D4D03AQGZ6E5Q29KyWg/profile-displayphoto-shrink_400_400/B4DZaeSSiMGcAg-/0/1746412317771?e=1752105600&v=beta&t=P48H6CBzZSGmGKHDn7GP_P13r-R8ScTnrB3JVDeWNB4">
                     <div>
                         <h4 class="fw-bold">Gav</h4>
                         <span>Gavril Benedict Coronel</span>
                     </div>
                     <p class="ps-2 pe-2" style="font-size: 8pt;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                        Hi there! I'm Gav — a BS Computer Science student at the University of the Philippines Diliman. I’m passionate about full-stack web development and love bringing ideas to life through code. When I’m not programming, you’ll probably find me gaming, singing, or diving into new tech projects. 😎
                     </p>
                     <div>
-                        <a href="https://github.com/gdbpursuit" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @gdbpursuit</button></a>
+                        <a href="https://github.com/gdbpursuit" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @gbpursuit</button></a>
                         <a href="https://www.linkedin.com/in/gb-coronel/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
                     </div>
                         
@@ -440,11 +451,11 @@
                         <span>Carl Geevee Vitug</span>
                     </div>
                     <p class="ps-2 pe-2" style="font-size: 8pt;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas, diam et convallis ullamcorper, nunc leo ullamcorper magna, et vulputate nisi sapien in est.
+                        Hello! I’m GV, a BS Computer Science Student, studying in the University of the Philippines Diliman. I have a great interest in history, economics, finances and programming. I love to play video games, watch animes and K-Dramas and read mangas and light novels in my spare time. 🙂‍↕️
                     </p>
                     <div>
-                        <a href="https://github.com/good-vibe" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @good-vibe</button></a>
-                        <a href="https://www.linkedin.com/in/cgvitug/" target="_blank"><button class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
+                        <a href="https://github.com/good-vibe" target="_blank"><button type="button" class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-github me-2"></i> @good-vibe</button></a>
+                        <a href="https://www.linkedin.com/in/cgvitug/" target="_blank"><button type="button" class="btn bg-primary rounded-2 text-start p-2 ps-3 pe-3 text-white"><i class="bi bi-linkedin me-2"></i> LinkedIn</button></a>
                     </div>
                         
                 </div>
