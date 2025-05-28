@@ -47,7 +47,7 @@ def plot_bar(x, y, title):
     plt.title(title)
     ax = plt.gca()
     ax.get_yaxis().get_offset_text().set_visible(False) 
-    plt.savefig(f'{title}.png', dpi=600, bbox_inches='tight', facecolor=fig.get_facecolor())
+    plt.savefig(f'./data/cluster_plots/{title}.png', dpi=600, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.show()
 
 plot_bar('Cluster', 'Number of Enrollees', 'Average Number of Enrollees by Cluster (Millions)')
@@ -55,3 +55,18 @@ plot_bar('Cluster', 'Number of Schools', 'Average Number of Schools by Cluster')
 plot_bar('Cluster', 'DepEd Budget', 'Average DepEd Budget by Cluster (Ten Billions)')
 plot_bar('Cluster', 'Budget_Enrollees', 'Average Budget per Enrollee by Cluster')
 plot_bar('Cluster', 'Budget_Schools', 'Average Budget per School by Cluster (Hundred Millions)')
+
+region_cols = [col for col in df.columns if col.startswith("Region_")]
+
+df['Region_Name'] = df[region_cols].idxmax(axis=1).str.replace("Region_", "")
+
+region_cluster_counts = df.groupby(['Region_Name', 'Cluster']).size().unstack(fill_value=0)
+
+plt.figure(figsize=(10, 8))
+sns.heatmap(region_cluster_counts, annot=True, fmt="d", cmap="flare_r")
+plt.title("Region Distribution per Cluster")
+plt.xlabel("Cluster")
+plt.ylabel("Region")
+plt.tight_layout()
+plt.savefig(f'./data/cluster_plots/Region_Heatmap.png', dpi=600, bbox_inches='tight', facecolor=fig.get_facecolor())
+plt.show()
