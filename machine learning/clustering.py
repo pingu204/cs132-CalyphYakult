@@ -7,7 +7,7 @@ import seaborn as sns
 import plotly.express as px
 
 # Load CSV
-df = pd.read_csv("./data/question1.csv")
+df = pd.read_csv("../data/question1.csv")
 
 # Define the features
 features = ['Year', 'Number of Enrollees', 'Number of Schools', 'DepEd Budget', 'Budget_Enrollees', 'Budget_Schools']
@@ -31,7 +31,7 @@ df['PC2'] = X_pca_3d[:, 1]
 df['PC3'] = X_pca_3d[:, 2]
 
 # Plot settings
-plt.style.use("dark_background")
+# plt.style.use("light_background")
 colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6100", "#FFB000", "#000000", "#FFFFFF"]
 
 # 3D Clustering Plot
@@ -53,11 +53,14 @@ fig_3d = px.scatter_3d(
 )
 
 fig_3d.update_layout(
-    scene=dict(
-        bgcolor='rgb(0,0,0)',
-    ),
-    template='plotly_dark'
+    # scene=dict(
+    #     bgcolor='rgb(0,0,0)',
+    # ),
+    template='plotly_white'
 )
+
+# Write to HTML
+fig_3d.write_html("fig.html", full_html=False)
 
 fig_3d.show()
 
@@ -68,14 +71,14 @@ def plot_bar(x, y, title):
     plt.title(title)
     ax = plt.gca()
     ax.get_yaxis().get_offset_text().set_visible(False) 
-    plt.savefig(f'./data/cluster_plots/{title}.png', dpi=600, bbox_inches='tight', facecolor=fig.get_facecolor())
+    plt.savefig(f'../data/cluster_plots/{title}.png', dpi=600, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.show()
 
-plot_bar('Cluster', 'Number of Enrollees', 'Average Number of Enrollees by Cluster (Millions)')
-plot_bar('Cluster', 'Number of Schools', 'Average Number of Schools by Cluster')
-plot_bar('Cluster', 'DepEd Budget', 'Average DepEd Budget by Cluster (Ten Billions)')
-plot_bar('Cluster', 'Budget_Enrollees', 'Average Budget per Enrollee by Cluster')
-plot_bar('Cluster', 'Budget_Schools', 'Average Budget per School by Cluster (Hundred Millions)')
+plot_bar('Cluster', 'Number of Enrollees', 'Average-Number-of-Enrollees-by-Cluster-(Millions)')
+plot_bar('Cluster', 'Number of Schools', 'Average-Number-of-Schools-by-Cluster')
+plot_bar('Cluster', 'DepEd Budget', 'Average-DepEd-Budget-by-Cluster-(Ten Billions)')
+plot_bar('Cluster', 'Budget_Enrollees', 'Average-Budget-per-Enrollee-by-Cluster')
+plot_bar('Cluster', 'Budget_Schools', 'Average-Budget-per-School-by-Cluster-(Hundred Millions)')
 
 # Heatmap to visualize distribution of regions per cluster
 region_cluster_counts = df.groupby(['Region', 'Cluster']).size().unstack(fill_value=0)
@@ -86,5 +89,5 @@ plt.title("Region Distribution per Cluster")
 plt.xlabel("Cluster")
 plt.ylabel("Region")
 plt.tight_layout()
-plt.savefig("./data/cluster_plots/Region_Heatmap.png", dpi=600, bbox_inches="tight")
-plt.show()
+plt.savefig("../data/cluster_plots/Region_Heatmap.png", dpi=600, bbox_inches="tight")
+# plt.show()
