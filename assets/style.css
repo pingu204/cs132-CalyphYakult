@@ -380,6 +380,19 @@ div.dept-logos img:hover{
     /* background-color: red; */
 }
 
+.content-grid {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.grid-trying {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+    gap: 10px; /* optional: space between items */
+}
+
 
 .topic {
     display: inline-block;
