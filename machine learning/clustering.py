@@ -9,12 +9,8 @@ import plotly.express as px
 # Load CSV
 df = pd.read_csv("./data/question1.csv")
 
-# One-hot encoding and drop the first column to avoid multicollinearity
-df_one_hot = pd.get_dummies(df['Region'], columns=["Region"], drop_first=True)
-df = pd.concat([df, df_one_hot], axis=1)
-
 # Define the features
-features = ['Year', 'Number of Enrollees', 'Number of Schools', 'DepEd Budget', 'Budget_Enrollees', 'Budget_Schools'] + [col for col in df.columns if 'Region_' in col]
+features = ['Year', 'Number of Enrollees', 'Number of Schools', 'DepEd Budget', 'Budget_Enrollees', 'Budget_Schools']
 
 # Scale
 scaler = StandardScaler()
@@ -64,7 +60,6 @@ fig_3d.update_layout(
 )
 
 fig_3d.show()
-
 
 # Bar Plots for relevant features
 def plot_bar(x, y, title):
