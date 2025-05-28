@@ -315,6 +315,11 @@ div.hypotheses {
     column-gap: 0.5em;
 }
 
+.link-underline-primary {
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+}
+
 /* .tek {
     background-color: green;
 } */
