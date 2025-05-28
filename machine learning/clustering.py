@@ -15,7 +15,7 @@ df = pd.concat([df, df_one_hot], axis=1)
 
 # Define the features
 features = ['Year', 'Number of Enrollees', 'Number of Schools', 'DepEd Budget', 'Budget_Enrollees', 'Budget_Schools'] + [col for col in df.columns if 'Region_' in col]
-print([col for col in df.columns if 'Region_' in col])
+
 # Scale
 scaler = StandardScaler()
 X = scaler.fit_transform(df[features])
@@ -91,7 +91,5 @@ plt.title("Region Distribution per Cluster")
 plt.xlabel("Cluster")
 plt.ylabel("Region")
 plt.tight_layout()
-plt.savefig("Region_Heatmap.png", dpi=600, bbox_inches="tight")
+plt.savefig("./data/cluster_plots/Region_Heatmap.png", dpi=600, bbox_inches="tight")
 plt.show()
-
-df.to_csv("224.csv", index=False)
