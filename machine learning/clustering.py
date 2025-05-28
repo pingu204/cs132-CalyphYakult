@@ -24,7 +24,6 @@ df['PC1'] = X_pca_3d[:, 0]
 df['PC2'] = X_pca_3d[:, 1]
 df['PC3'] = X_pca_3d[:, 2]
 
-# 3D Plot
 plt.style.use("dark_background")
 colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6100", "#FFB000", "#000000", "#FFFFFF"]
 
